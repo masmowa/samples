@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="tixml2_tut1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/tixml2_tut1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="$(#tinyxml2)" />
+				</Compiler>
+				<Linker>
+					<Add directory="$(#tinyxml2)/lib" />
+					<Add directory="$(#tinyxml2)/obj/Release/" />
+					<Add directory="$(#tinyxml2)/obj/Debug" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/tixml2_tut1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="$(#tinyxml2)" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-fexceptions" />
+			<Add directory="$(#tinyxml2)" />
+			<Add directory="./include" />
+		</Compiler>
+		<Linker>
+			<Add library="libtinyxml2.a" />
+			<Add directory="$(#tinyxml2)/lib" />
+		</Linker>
+		<Unit filename="include/AppSettings.h" />
+		<Unit filename="include/ConnectionSettings.h" />
+		<Unit filename="include/WindowSettings.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/AppSettings.cpp" />
+		<Unit filename="src/ConnectionSettings.cpp" />
+		<Unit filename="src/WindowSettings.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

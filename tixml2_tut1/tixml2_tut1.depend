@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1455679412 source:c:\users\mark\documents\proj\practice\tixml2_tut1\main.cpp
+	<iostream>
+	<string>
+	<map>
+	<tinyxml2.h>
+	<cstdlib>
+	<cstring>
+	<ctime>
+	<io.h>
+	<sys/stat.h>
+	"AppSettings.h"
+
+1455299752 c:\etc\proj\tinyxml2\tinyxml2.h
+	<ctype.h>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<cctype>
+	<climits>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<android/log.h>
+	<assert.h>
+
+1455668524 c:\users\mark\documents\proj\practice\tixml2_tut1\include\appsettings.h
+	<map>
+	<list>
+	"WindowSettings.h"
+	"ConnectionSettings.h"
+
+1455678264 c:\users\mark\documents\proj\practice\tixml2_tut1\include\windowsettings.h
+	<string>
+
+1455678129 c:\users\mark\documents\proj\practice\tixml2_tut1\include\connectionsettings.h
+	<string>
+
+1455678078 source:c:\users\mark\documents\proj\practice\tixml2_tut1\src\appsettings.cpp
+	"AppSettings.h"
+	<tinyxml2.h>
+	<string>
+
+1455678230 source:c:\users\mark\documents\proj\practice\tixml2_tut1\src\connectionsettings.cpp
+	"ConnectionSettings.h"
+
+1455678335 source:c:\users\mark\documents\proj\practice\tixml2_tut1\src\windowsettings.cpp
+	"WindowSettings.h"
+
