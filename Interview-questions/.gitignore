@@ -1,3 +1,10 @@
+# .gitignore
+# compiler generated files
+*.pdb
+*.bsc
+*.pch
+*.obj
+
 # Compiled source #
 ###################
 *.com
@@ -6,14 +13,6 @@
 *.exe
 *.o
 *.so
-
-# .gitignore
-# compiler generated files
-###################
-*.pdb
-*.bsc
-*.pch
-*.obj
 
 # Packages #
 ############

@@ -1,0 +1,43 @@
+#include "version.h"
+#include "product_version_strings.h"
+
+1 VERSIONINFO
+FILEVERSION     MAJOR,MINOR,REVISION,BUILD
+PRODUCTVERSION  MAJOR,MINOR,REVISION,BUILD
+FILEFLAGSMASK  	VS_FFI_FILEFLAGSMASK
+// indicates type of build
+FILEFLAGS      	0x0
+FILEOS         	VOS_NT_WINDOWS32
+FILETYPE       	VFT_APP
+FILESUBTYPE    	VFT2_UNKNOWN
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "CompanyName", COMPANY_NAME_STR
+      VALUE "FileDescription", FILE_DESCRIPTION_STR
+      VALUE "FileVersion", RC_FILEVERSION_STRING
+      VALUE "InternalName", INTERNAL_NAME_STR
+      VALUE "LegalCopyright", LEGAL_COPYRIGHT_STR
+      VALUE "Author", AUTHOR_STR
+      VALUE "OriginalFilename", ORIGINAL_FILENAME_STR
+      VALUE "ProductName", PRODUCT_NAME_STR
+      VALUE "ProductVersion", FULLVERSION_STRING
+      VALUE "PrivateBuild", PRIVATE_BUILD_STR
+      VALUE "SpecialBuild", SPECIAL_BUILD_STR
+    END
+  END
+
+  BLOCK "VarFileInfo"
+  BEGIN
+        /* The following line should only be modified for localized versions.     */
+        /* It consists of any number of WORD,WORD pairs, with each pair           */
+        /* describing a language,codepage combination supported by the file.      */
+        /*                                                                        */
+        /* For example, a file might have values "0x409,1252" indicating that it  */
+        /* supports English language (0x409) in the Windows ANSI codepage (1252). */
+
+    VALUE "Translation", 0x409, 1252
+  END
+END

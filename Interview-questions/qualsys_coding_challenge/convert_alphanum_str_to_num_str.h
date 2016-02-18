@@ -1,0 +1,6 @@
+#ifndef CONVERT_ALPHANUM_STR_TO_NUM_STR_H_INCLUDED
+#define CONVERT_ALPHANUM_STR_TO_NUM_STR_H_INCLUDED
+
+char* alpha_numeric_to_num_str(char * str);
+
+#endif // CONVERT_ALPHANUM_STR_TO_NUM_STR_H_INCLUDED

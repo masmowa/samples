@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1452106406 source:c:\users\mark\documents\proj\practice\interview-questions\msft_hard_skill_assment_coding_question_rand\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<map>
+	<list>
+	<random>
+

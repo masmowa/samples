@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1452224443 source:c:\users\mark\documents\proj\practice\interview-questions\qualsys_coding_challenge\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<string.h>
+	"Linked_list_with_insert.h"
+	"convert_alphanum_str_to_num_str.h"
+
+1452218307 c:\users\mark\documents\proj\practice\interview-questions\qualsys_coding_challenge\linked_list_with_insert.h
+	<iostream>
+
+1452224191 source:c:\users\mark\documents\proj\practice\interview-questions\qualsys_coding_challenge\convert_alphanum_str_to_num_str.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<string.h>
+	"convert_alphanum_str_to_num_str.h"
+
+1452224270 c:\users\mark\documents\proj\practice\interview-questions\qualsys_coding_challenge\convert_alphanum_str_to_num_str.h
+
