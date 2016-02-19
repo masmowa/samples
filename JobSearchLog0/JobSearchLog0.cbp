@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="JobSearchLog0" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/JobSearchLog0" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="$(#boost)/include/boost-1_60" />
+				</Compiler>
+				<Linker>
+					<Add library="boost_system-mgw49-mt-d-1_60" />
+					<Add library="boost_filesystem-mgw49-mt-d-1_60" />
+					<Add library="boost_thread-mgw49-mt-d-1_60" />
+					<Add directory="$(#boost)/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/JobSearchLog0" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lboost_system-mgw49-mt-1_60" />
+					<Add library="boost_filesystem-mgw49-mt-1_60" />
+					<Add library="boost_system-mgw49-mt-1_60" />
+					<Add library="boost_thread-mgw49-mt-1_60" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="$(#tinyxml2)" />
+			<Add directory="$(#boost)/include/boost-1_60" />
+		</Compiler>
+		<Linker>
+			<Add option="-lboost_system-mgw49-mt-1_60 -lboost_thread-mgw49-mt-1_60 -lboost_filesystem-mgw49-mt-1_60" />
+			<Add library="libtinyxml2.a" />
+			<Add directory="$(#tinyxml2)/lib" />
+			<Add directory="$(#boost)/lib" />
+		</Linker>
+		<Unit filename="include/AppSettings.h" />
+		<Unit filename="include/ContactOrJobSearchActivity.h" />
+		<Unit filename="include/EmployerContact.h" />
+		<Unit filename="include/JobSearchLog.h" />
+		<Unit filename="include/WorksourceActivity.h" />
+		<Unit filename="include/exampleWithCopyConstructor.h" />
+		<Unit filename="include/std_tools.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/AppSettings.cpp" />
+		<Unit filename="src/ContactOrJobSearchActivity.cpp" />
+		<Unit filename="src/EmployerContact.cpp" />
+		<Unit filename="src/JobSearchLog.cpp" />
+		<Unit filename="src/WorksourceActivity.cpp" />
+		<Unit filename="src/exampleWithCopyConstructor.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
