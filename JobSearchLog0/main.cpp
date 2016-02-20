@@ -3,6 +3,8 @@
 #include <algorithm>    // transform
 #include <ctype.h>      // toupper
 #include <string.h>
+#include <exception>
+#include <stdexcept>
 
 #include "tinyxml2.h"
 #include "JobSearchLog.h"
@@ -11,14 +13,17 @@
 
 using namespace std;
 namespace st = std_tools;
+
+void PromptAndFillAppSettingsValuesFormConsole(AppSettings& settings)
+{
+    std::cout << __PRETTY_FUNCTION__ << " TODO: NOT YET IMPLEMENTED " << std::endl;
+}
+
+
 void Verify_Data_Ok(AppSettings& settings)
 {
-    AppSettings::USER_INFO_MAP::iterator iter;
-    std::cout << "\nvalues currently stored in " << settings.get_name() << std::endl;
+    settings.Dump(std::cout);
 
-    for (iter = settings.Getuser_info_map().begin(); iter != settings.Getuser_info_map().end(); ++iter ) {
-        std::cout << iter->first << ": [ " << iter->second << " ]" << std::endl;
-    }
     std::cout << "Are These Values correct [Y | N] " << " : ";
     std::string in_str;
     getline (cin, in_str);
@@ -35,6 +40,7 @@ void Verify_Data_Ok(AppSettings& settings)
 int main(int argc, char* argv[])
 {
     cout << "argc : " << argc << " argv[0] : " << argv[0] << endl;
+    try {
     //cout << "Hello world!" << endl;
     AppSettings settings;
     AppSettings::PathFromExePath(settings, argv[0]);
@@ -44,6 +50,12 @@ int main(int argc, char* argv[])
     }
     Verify_Data_Ok(settings);
     settings.Save();
-
+    }
+    catch (std::runtime_error& e) {
+        std::cout << __PRETTY_FUNCTION__ << " RUNTIME_ERROR caught " << e.what() << std::endl;
+    }
+    catch (std::exception& e) {
+        std::cout << __PRETTY_FUNCTION__ << " EXCEPTION caught " << e.what() << std::endl;
+    }
     return 0;
 }

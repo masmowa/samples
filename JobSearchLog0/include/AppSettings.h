@@ -40,6 +40,10 @@ public:
 
         std::string& GetSettingsFileName() { return m_settings_file_name; }
         void SetSettingsFileName(const char* val) { m_settings_file_name = val; }
+        void BuildFullFilePath(const char* suffix="_AppSettings", const char* in_path);
+
+        std::string& get_worksource_log_path() { return m_worksource_log_path; }
+        void set_worksource_log_path(const char* val) { m_worksource_log_path = val; }
 
         std::string GetSettingsFilePath() { return PathToSettingsFile(); }
 
@@ -47,6 +51,9 @@ public:
 
         bool Load(const char* path);
         void Save();
+        void Dump(std::ostream &os);
+        void DumpUserData(std::ostream &os);
+        void DumpAppSettings(std::ostream &os);
 
         void PromptForUserData();
 
@@ -63,6 +70,7 @@ public:
         std::string m_name;
         std::string m_settings_path;
         std::string m_settings_file_name;
+        std::string m_worksource_log_path;
 };
 
 #endif // APPSETTINGS_H

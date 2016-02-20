@@ -8,7 +8,8 @@
 #include <ctime>
 #include "AppSettings.h"
 #include "tinyxml2.h"
-//#define BOOST_SYSTEM_NO_DEPRECATED
+#include "FileLocation.h"
+
 #include <boost/filesystem.hpp>
 
 using namespace std;
@@ -27,6 +28,9 @@ const char * AppSettings::m_user_info_keys[] = {
     ""
 };
 const char* AppSettings::m_app_settings_block_name = "WorksourceActivityUser";
+const char* AppSettings::m_app_settings_next_primary_key_val = "NextPrimaryKeyValue";
+const char* AppSettings::m_worksource_log_path_key = "WorksourceLogPath";
+
 AppSettings::AppSettings(const char* settings_path, const char* settings_file_name)
 : m_settings_path(settings_path)
 , m_settings_file_name(settings_file_name)
@@ -102,7 +106,17 @@ void AppSettings::PathFromExePath(AppSettings& context, const char* in_path)
     std::cout << "path::filename_with_extension [ " << filename << " ]\n" << std::endl;
 
 }
-
+void AppSettings::BuildFullFilePath(const char* suffix, const char* in_path)
+{
+    if (!suffix) {
+        std::stringstream msg;
+        msg << __PRETTY_FUNCTION__ << " invalid parameter 'suffix' "
+        std::cerr << " !! ERROR " << msg.str() << endl;
+        throw std::invalid_argument(msg.str());
+    }
+    std::string filename = FileLocation::FileNameFromBaseSuffix(
+                                                                FileLocation::BaseFileNameFromExePath(in_path))
+}
 bool AppSettings::Load(const char* in_path)
 {
     bool result = false;
@@ -233,4 +247,25 @@ void AppSettings::PromptForUserData()
         this->m_user_info_map[AppSettings::m_user_info_keys[i]] = in_str;
         //std::cout << std::endl;
     }
+}
+
+void AppSettings::DumpUserData(std::ostream &os)
+{
+    AppSettings::USER_INFO_MAP::iterator iter;
+    for (iter = this->Getuser_info_map().begin(); iter != this->Getuser_info_map().end(); ++iter ) {
+        os << iter->first << ": [ " << iter->second << " ]" << std::endl;
+    }
+}
+void AppSettings::DumpAppSettings(std::ostream &os)
+{
+    AppSettings::USER_INFO_MAP::iterator iter;
+    os << this->m_app_settings_next_primary_key_val << " : [ " << this->GetNextPrimaryKeyValue() << " ]" << std::endl;
+    os << this->m_worksource_log_path_key  << " : [ " << this->m_worksource_log_path << " ]" << std::endl;
+}
+void AppSettings::Dump(std::ostream &os)
+{
+    os << "\nvalues currently stored in " << this->get_name() << std::endl;
+
+    this->DumpUserData(os);
+    this->DumpAppSettings(os);
 }
