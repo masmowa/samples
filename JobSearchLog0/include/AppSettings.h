@@ -5,17 +5,29 @@
 #include <map>
 #include <list>
 
+/*!
+ * MAP data name (key) to the data value
+ */
+typedef std::map<std::string, std::string> DATA_MAP;
+
+
+/** \brief contain steady state settings for the application
+ */
 class AppSettings
 {
 public:
         typedef std::map<std::string, std::string> USER_INFO_MAP;
         typedef std::map<std::string, std::string> APP_SETTINGS_MAP;
-        const char* default_ext="xml";
+        static const char* DEFAULT_EXT;
+        static const char* DEFAULT_NAME;
 
         static const char * m_user_info_keys[];
+
+        static const char* m_app_settings_next_primary_key_val;
+        static const char* m_worksource_log_path_key;
         static const char* m_app_settings_block_name;
     public:
-        AppSettings(const char* settings_path="", const char* settings_file_name="AppSettings.xml");
+        AppSettings(const char* settings_path="", const char* settings_file_name=AppSettings::DEFAULT_NAME, const char* ext=AppSettings::DEFAULT_EXT);
         virtual ~AppSettings();
         AppSettings(const AppSettings& other);
         AppSettings& operator=(const AppSettings& other);
@@ -40,16 +52,16 @@ public:
 
         std::string& GetSettingsFileName() { return m_settings_file_name; }
         void SetSettingsFileName(const char* val) { m_settings_file_name = val; }
-        void BuildFullFilePath(const char* suffix="_AppSettings", const char* in_path);
+        void BuildFullFilePath(const char* in_path, const char* suffix=AppSettings::DEFAULT_NAME, const char* ext=AppSettings::DEFAULT_EXT);
 
         std::string& get_worksource_log_path() { return m_worksource_log_path; }
         void set_worksource_log_path(const char* val) { m_worksource_log_path = val; }
 
         std::string GetSettingsFilePath() { return PathToSettingsFile(); }
 
-        static void PathFromExePath(AppSettings& context, const char* path);
+        //static void PathFromExePath(AppSettings& context, const char* path);
 
-        bool Load(const char* path);
+        bool Load();
         void Save();
         void Dump(std::ostream &os);
         void DumpUserData(std::ostream &os);

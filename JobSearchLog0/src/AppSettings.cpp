@@ -8,7 +8,7 @@
 #include <ctime>
 #include "AppSettings.h"
 #include "tinyxml2.h"
-#include "FileLocation.h"
+#include "FileUtility.h"
 
 #include <boost/filesystem.hpp>
 
@@ -27,23 +27,33 @@ const char * AppSettings::m_user_info_keys[] = {
     "Mobile-phone",
     ""
 };
-const char* AppSettings::m_app_settings_block_name = "WorksourceActivityUser";
+const char* AppSettings::m_app_settings_block_name           = "WorksourceActivityUser";
 const char* AppSettings::m_app_settings_next_primary_key_val = "NextPrimaryKeyValue";
-const char* AppSettings::m_worksource_log_path_key = "WorksourceLogPath";
+const char* AppSettings::m_worksource_log_path_key           = "WorksourceLogPath";
 
-AppSettings::AppSettings(const char* settings_path, const char* settings_file_name)
+const char* AppSettings::DEFAULT_EXT="xml";
+const char* AppSettings::DEFAULT_NAME="Settings";
+
+AppSettings::AppSettings(const char* settings_path, const char* settings_file_name, const char* ext)
 : m_settings_path(settings_path)
 , m_settings_file_name(settings_file_name)
 , m_NextPrimaryKeyValue(0)
 , m_name(AppSettings::m_app_settings_block_name)
 
 {
-    //ctor
+    std::cout << "\n++" << __PRETTY_FUNCTION__ << "" << std::endl;
+
+    fs::path filename(m_settings_file_name);
+    filename.replace_extension(ext);
+
+    m_settings_file_name = filename.string();
+    std::cout <<   "--" << __PRETTY_FUNCTION__ << "\n" << std::endl;
 }
 
 AppSettings::~AppSettings()
 {
-    //dtor
+    std::cout << "\n++" << __PRETTY_FUNCTION__ << "" << std::endl;
+    std::cout <<   "--" << __PRETTY_FUNCTION__ << "\n" << std::endl;
 }
 
 AppSettings::AppSettings(const AppSettings& other)
@@ -59,7 +69,7 @@ AppSettings& AppSettings::operator=(const AppSettings& rhs)
 }
 std::string& AppSettings::PathToSettingsFile()
 {
-    std::cout << "++" << __PRETTY_FUNCTION__ << std::endl;
+    std::cout << "\n++" << __PRETTY_FUNCTION__ << std::endl;
 
     {
         fs::path dir(this->GetSettingsPath().c_str());
@@ -77,55 +87,56 @@ std::string& AppSettings::PathToSettingsFile()
         std::cout << "file_path [ " << this->m_settings_file_path.c_str() << " ]" << std::endl;
 
     }
+    std::cout <<   "--" << __PRETTY_FUNCTION__ << "\n" << std::endl;
     return m_settings_file_path;
 }
 
-void AppSettings::PathFromExePath(AppSettings& context, const char* in_path)
+void AppSettings::BuildFullFilePath(const char* in_path, const char* suffix, const char* ext)
 {
-    std::cout << "++" << __PRETTY_FUNCTION__ << " in_path     : " << in_path << std::endl;
-    fs::path exe_path(in_path);
-    std::cout << "path::exe_path [" << exe_path << "]" << std::endl;
-
-    fs::path dir(exe_path.branch_path());
-    std::cout << "path::branch_path [" << dir << "]" << std::endl;
-    fs::path cur_dir( fs::current_path() );
-    std::cout << "path::current_path [" << fs::current_path() << std::endl;
-    context.SetSettingsPath(fs::current_path().string().c_str());
-
-    fs::path filename(fs::basename(exe_path));
-    std::stringstream fnAppSettings;
-    fnAppSettings << filename.string().c_str()<< "_AppSettings";
-    std::cout << "path::filename [" << filename << "]" << std::endl;
-    std::cout << "str:filename_AppSettings [" << fnAppSettings.str().c_str() << "]" << std::endl;
-    filename = fnAppSettings.str().c_str();
-    fs::path ext(exe_path.extension());
-    std::cout << "path::extension [" << ext << "]" << std::endl;
-
-    context.SetSettingsFileName(filename.replace_extension(context.default_ext).string().c_str());
-
-    std::cout << "path::filename_with_extension [ " << filename << " ]\n" << std::endl;
-
-}
-void AppSettings::BuildFullFilePath(const char* suffix, const char* in_path)
-{
+    std::cout << "\n++" << __PRETTY_FUNCTION__ << "" << std::endl;
     if (!suffix) {
         std::stringstream msg;
-        msg << __PRETTY_FUNCTION__ << " invalid parameter 'suffix' "
+        msg << __PRETTY_FUNCTION__ << " invalid parameter 'suffix' ";
         std::cerr << " !! ERROR " << msg.str() << endl;
         throw std::invalid_argument(msg.str());
     }
-    std::string filename = FileLocation::FileNameFromBaseSuffix(
-                                                                FileLocation::BaseFileNameFromExePath(in_path))
+    if (!in_path) {
+        std::stringstream msg;
+        msg << __PRETTY_FUNCTION__ << " invalid parameter 'in_path' ";
+        std::cerr << " !! ERROR " << msg.str() << endl;
+        throw std::invalid_argument(msg.str());
+    }
+    if (!ext) {
+        std::stringstream msg;
+        msg << __PRETTY_FUNCTION__ << " invalid parameter 'ext' ";
+        std::cerr << " !! ERROR " << msg.str() << endl;
+        throw std::invalid_argument(msg.str());
+    }
+    std::string filename = FileUtility::FileNameFromParts(
+                                                       FileUtility::BaseFileNameFromExePath(in_path).c_str(),
+                                                       suffix,
+                                                       AppSettings::DEFAULT_EXT
+                                                       );
+    this->SetSettingsFileName(filename.c_str());
+    this->SetSettingsPath(fs::current_path().string().c_str());
+
+    fs::path full_path = fs::current_path() / filename;
+
+    std::cout << "full path " << full_path.string() << std::endl;
+
+    std::cout <<   "--" << __PRETTY_FUNCTION__ << "\n" << std::endl;
 }
-bool AppSettings::Load(const char* in_path)
+bool AppSettings::Load()
 {
+    std::cout << "\n++" << __PRETTY_FUNCTION__ << "" << std::endl;
     bool result = false;
 
-    fs::path full_path(in_path);
+    std::string filepath = this->PathToSettingsFile();
+
     tx::XMLDocument doc;
-    if (fs::exists(in_path)) {
-        if (doc.LoadFile((in_path)) != tx::XML_SUCCESS) {
-            std:cerr << "ERROR while loading [" << in_path << "]" << std::endl;
+    if (fs::exists(filepath.c_str())) {
+        if (doc.LoadFile((filepath.c_str())) != tx::XML_SUCCESS) {
+            std:cerr << "ERROR while loading [" << filepath << "]" << std::endl;
             return false;
         }
         tx::XMLHandle hDoc(&doc);
@@ -175,10 +186,11 @@ bool AppSettings::Load(const char* in_path)
 
     }
     else {
-        std::cout << "WARNING: NO settings file [" << in_path << "]" << std::endl;
+        std::cout << "WARNING: NO settings file [" << filepath << "]" << std::endl;
         return false;
     }
 
+    std::cout <<   "--" << __PRETTY_FUNCTION__ << "\n" << std::endl;
     return true;
 }
 
@@ -235,37 +247,53 @@ void AppSettings::Save()
 	std::cout << "writing document to " << this->m_settings_file_path << std::endl;
 	doc.SaveFile(this->m_settings_file_path.c_str());
 
+    std::cout <<   "--" << __PRETTY_FUNCTION__ << "\n" << std::endl;
 }
 
 void AppSettings::PromptForUserData()
 {
     std::string in_str;
     std::string item_str;
+    std::cout << "\n++" << __PRETTY_FUNCTION__ << "" << std::endl;
+
     for ( size_t i = 0; AppSettings::m_user_info_keys[i] != ""; ++i ) {
         std::cout << "Enter a value for " << AppSettings::m_user_info_keys[i] << " : ";
         getline (cin, in_str);
         this->m_user_info_map[AppSettings::m_user_info_keys[i]] = in_str;
         //std::cout << std::endl;
     }
+    std::cout <<   "--" << __PRETTY_FUNCTION__ << "\n" << std::endl;
 }
 
 void AppSettings::DumpUserData(std::ostream &os)
 {
+    std::cout << "\n++" << __PRETTY_FUNCTION__ << "" << std::endl;
+
     AppSettings::USER_INFO_MAP::iterator iter;
     for (iter = this->Getuser_info_map().begin(); iter != this->Getuser_info_map().end(); ++iter ) {
         os << iter->first << ": [ " << iter->second << " ]" << std::endl;
     }
+
+    std::cout <<   "--" << __PRETTY_FUNCTION__ << "\n" << std::endl;
 }
 void AppSettings::DumpAppSettings(std::ostream &os)
 {
+    std::cout << "\n++" << __PRETTY_FUNCTION__ << "" << std::endl;
+
     AppSettings::USER_INFO_MAP::iterator iter;
     os << this->m_app_settings_next_primary_key_val << " : [ " << this->GetNextPrimaryKeyValue() << " ]" << std::endl;
     os << this->m_worksource_log_path_key  << " : [ " << this->m_worksource_log_path << " ]" << std::endl;
+
+    std::cout <<   "--" << __PRETTY_FUNCTION__ << "\n" << std::endl;
 }
 void AppSettings::Dump(std::ostream &os)
 {
+    std::cout << "\n++" << __PRETTY_FUNCTION__ << "" << std::endl;
+
     os << "\nvalues currently stored in " << this->get_name() << std::endl;
 
     this->DumpUserData(os);
     this->DumpAppSettings(os);
+
+    std::cout <<   "--" << __PRETTY_FUNCTION__ << "\n" << std::endl;
 }

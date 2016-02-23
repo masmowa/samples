@@ -1,6 +1,7 @@
-#include "FileLocation.h"
+#include "FileUtility.h"
 #include <string>
 #include <sstream>
+#include <iostream>
 #include <cstdlib>
 #include <cstring>
 #include <ctime>
@@ -20,16 +21,12 @@ namespace fs = boost::filesystem;
  * \param ext const char*
  *
  */
-FileLocation::FileLocation(const char* base_path="", const char* base_file_name, const char* file_name_suffix, const char* ext)
-: m_base_path(base_path)
-, m_base_file_name(base_file_name)
-, m_file_name_suffix(file_name_suffix)
-, m_ext(ext)
+FileUtility::FileUtility()
 {
     //ctor
 }
 
-FileLocation::~FileLocation()
+FileUtility::~FileUtility()
 {
     //dtor
 }
@@ -39,49 +36,67 @@ FileLocation::~FileLocation()
  * \return std::string : copy of the path as a std::string
  *
  */
-std::string FileLocation::get_CWD()
+std::string FileUtility::get_CWD()
 {
+    std::cout << "\n++" << __PRETTY_FUNCTION__ << "" << std::endl;
+
     std::cout << "path::current_path [" << fs::current_path() << std::endl;
+
+    std::cout <<   "--" << __PRETTY_FUNCTION__ << "\n" << std::endl;
     return fs::current_path().string();
 }
 
-void FileLocation::BaseFileNameFromExePath(const char * in_path)
+std::string FileUtility::BaseFileNameFromExePath(const char * in_path)
 {
     std::cout << "++" << __PRETTY_FUNCTION__ << " in_path     : " << in_path << std::endl;
     if (!in_path) {
         std::stringstream msg;
-        msg << __PRETTY_FUNCTION__ << " invalid parameter 'in_path' "
+        msg << __PRETTY_FUNCTION__ << " invalid parameter 'in_path' ";
         std::cerr << " !! ERROR " << msg.str() << endl;
         throw std::invalid_argument(msg.str());
     }
     fs::path exe_path(in_path);
-    fs::path fn_base = exe_path.filename();
+    fs::path fn_base = exe_path.stem();
+    fs::path fn_ext  = exe_path.filename();
     std::cout << "path::exe_path [" << exe_path << "]" << std::endl;
 
     std::cout << "path::basename [" << fn_base.string() << "]" << std::endl;
 
+    std::cout <<   "--" << __PRETTY_FUNCTION__ << "\n" << std::endl;
     return fn_base.string();
 }
 
-std::string FileLocation::FileNameFromBaseSuffix(const char * base, const char* suffix)
+std::string FileUtility::FileNameFromParts(const char * base, const char* suffix, const char* ext)
 {
     std::stringstream ss_name;
+    std::cout << "\n++" << __PRETTY_FUNCTION__ << "" << std::endl;
+
     if (!base) {
         std::stringstream msg;
-        msg << __PRETTY_FUNCTION__ << " invalid parameter 'base' "
+        msg << __PRETTY_FUNCTION__ << " invalid parameter 'base' ";
         std::cerr << " !! ERROR " << msg.str() << endl;
         throw std::invalid_argument(msg.str());
     }
     if (!suffix) {
         std::stringstream msg;
-        msg << __PRETTY_FUNCTION__ << " invalid parameter 'suffix' "
+        msg << __PRETTY_FUNCTION__ << " invalid parameter 'suffix' ";
+        std::cerr << " !! ERROR " << msg.str() << endl;
+        throw std::invalid_argument(msg.str());
+    }
+    if (!suffix) {
+        std::stringstream msg;
+        msg << __PRETTY_FUNCTION__ << " invalid parameter 'ext' ";
         std::cerr << " !! ERROR " << msg.str() << endl;
         throw std::invalid_argument(msg.str());
     }
     char underscore = ((suffix[0] == '_') ? '\0' : '_');
-    ss_name << base << underscore << suffix;
-    std::cout << "file name [ " << ss_name.str() << " ]" << std::endl;
 
-    return ss_name.str();
+    ss_name << base << underscore << suffix;
+    fs::path file = ss_name.str().c_str();
+    file.replace_extension(ext);
+    std::cout << "file name [ " << file.string() << " ]" << std::endl;
+
+    std::cout <<   "--" << __PRETTY_FUNCTION__ << "\n" << std::endl;
+    return file.string();
 }
 

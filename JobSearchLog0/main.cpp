@@ -16,7 +16,7 @@ namespace st = std_tools;
 
 void PromptAndFillAppSettingsValuesFormConsole(AppSettings& settings)
 {
-    std::cout << __PRETTY_FUNCTION__ << " TODO: NOT YET IMPLEMENTED " << std::endl;
+    std::cout << "++" << __PRETTY_FUNCTION__ << " TODO: NOT YET IMPLEMENTED " << std::endl;
 }
 
 
@@ -43,8 +43,11 @@ int main(int argc, char* argv[])
     try {
     //cout << "Hello world!" << endl;
     AppSettings settings;
-    AppSettings::PathFromExePath(settings, argv[0]);
-    if (!settings.Load(settings.GetSettingsFilePath().c_str())) {
+    //settings.SetSettingsPath(FileLocation::get_CWD().c_str())
+    settings.BuildFullFilePath(argv[0], AppSettings::DEFAULT_NAME);
+    // AppSettings::PathFromExePath(settings, argv[0]);
+
+    if (!settings.Load()) {
         settings.PromptForUserData();
 
     }

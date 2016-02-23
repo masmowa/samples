@@ -3231,3 +3231,90 @@
 	<string>
 	<locale>
 
+1455703018 source:c:\users\mark\documents\github\samples\jobsearchlog0\src\contactorjobsearchactivity.cpp
+	"ContactOrJobSearchActivity.h"
+
+1455702794 c:\users\mark\documents\github\samples\jobsearchlog0\include\contactorjobsearchactivity.h
+	<string>
+	"EmployerContact.h"
+	"WorksourceActivity.h"
+
+1455702487 c:\users\mark\documents\github\samples\jobsearchlog0\include\employercontact.h
+	<string>
+
+1455702523 c:\users\mark\documents\github\samples\jobsearchlog0\include\worksourceactivity.h
+	<string>
+
+1455702286 source:c:\users\mark\documents\github\samples\jobsearchlog0\src\employercontact.cpp
+	"EmployerContact.h"
+
+1455702067 source:c:\users\mark\documents\github\samples\jobsearchlog0\src\examplewithcopyconstructor.cpp
+	"exampleWithCopyConstructor.h"
+
+1455702916 c:\users\mark\documents\github\samples\jobsearchlog0\include\examplewithcopyconstructor.h
+	<string>
+
+1455702978 source:c:\users\mark\documents\github\samples\jobsearchlog0\src\jobsearchlog.cpp
+	"JobSearchLog.h"
+
+1455703026 c:\users\mark\documents\github\samples\jobsearchlog0\include\jobsearchlog.h
+	<string>
+	<map>
+	"ContactOrJobSearchActivity.h"
+	"EmployerContact.h"
+	"WorksourceActivity.h"
+
+1455702993 source:c:\users\mark\documents\github\samples\jobsearchlog0\src\worksourceactivity.cpp
+	"WorksourceActivity.h"
+
+1456106952 source:c:\users\mark\documents\github\samples\jobsearchlog0\main.cpp
+	<iostream>
+	<string>
+	<algorithm>
+	<ctype.h>
+	<string.h>
+	<exception>
+	<stdexcept>
+	"tinyxml2.h"
+	"JobSearchLog.h"
+	"AppSettings.h"
+	"std_tools.h"
+
+1456106767 c:\users\mark\documents\github\samples\jobsearchlog0\include\appsettings.h
+	<string>
+	<map>
+	<list>
+
+1455838879 c:\users\mark\documents\github\samples\jobsearchlog0\include\std_tools.h
+	<string>
+	<locale>
+
+1456107399 source:c:\users\mark\documents\github\samples\jobsearchlog0\src\appsettings.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<map>
+	<tinyxml2.h>
+	<cstdlib>
+	<cstring>
+	<ctime>
+	"AppSettings.h"
+	"tinyxml2.h"
+	"FileLocation.h"
+	<boost/filesystem.hpp>
+
+1456101034 c:\users\mark\documents\github\samples\jobsearchlog0\include\filelocation.h
+	<string>
+
+1456103020 source:c:\users\mark\documents\github\samples\jobsearchlog0\src\filelocation.cpp
+	"FileLocation.h"
+	<string>
+	<sstream>
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<ctime>
+	<exception>
+	<stdexcept>
+	<boost/filesystem.hpp>
+
