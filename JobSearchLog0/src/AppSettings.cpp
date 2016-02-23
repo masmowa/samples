@@ -156,7 +156,7 @@ bool AppSettings::Load()
 
         // block: string table
         {
-            m_user_info_map.clear(); // trash existing table
+            m_map_user_info.clear(); // trash existing table
 
             pElem=hRoot.FirstChildElement( "UserInformation" ).FirstChild().ToElement();
             for( pElem; pElem; pElem=pElem->NextSiblingElement())
@@ -165,10 +165,10 @@ bool AppSettings::Load()
                 const char *pText=pElem->GetText();
                 if (pKey && pText)
                 {
-                    m_user_info_map[pKey]=pText;
+                    m_map_user_info[pKey]=pText;
                 }
             }
-            result = (m_user_info_map.size() > 0);
+            result = (m_map_user_info.size() > 0);
         }
         {
             pElem = hRoot.FirstChildElement( "NextPrimaryKeyValue" ).ToElement();
@@ -221,7 +221,7 @@ void AppSettings::Save()
 		root->LinkEndChild( msgs );
 
 //		for (auto& iter=m_user_info_map.begin(); iter != m_user_info_map.end(); iter++)
-		for (auto& iter : m_user_info_map)
+		for (auto& iter : m_map_user_info)
 		{
 			const std::string & key=iter.first;
 			const std::string & value=iter.second;
@@ -259,7 +259,7 @@ void AppSettings::PromptForUserData()
     for ( size_t i = 0; AppSettings::m_user_info_keys[i] != ""; ++i ) {
         std::cout << "Enter a value for " << AppSettings::m_user_info_keys[i] << " : ";
         getline (cin, in_str);
-        this->m_user_info_map[AppSettings::m_user_info_keys[i]] = in_str;
+        this->m_map_user_info[AppSettings::m_user_info_keys[i]] = in_str;
         //std::cout << std::endl;
     }
     std::cout <<   "--" << __PRETTY_FUNCTION__ << "\n" << std::endl;
@@ -269,7 +269,7 @@ void AppSettings::DumpUserData(std::ostream &os)
 {
     std::cout << "\n++" << __PRETTY_FUNCTION__ << "" << std::endl;
 
-    AppSettings::USER_INFO_MAP::iterator iter;
+    AppSettings::DATA_MAP::iterator iter;
     for (iter = this->Getuser_info_map().begin(); iter != this->Getuser_info_map().end(); ++iter ) {
         os << iter->first << ": [ " << iter->second << " ]" << std::endl;
     }
@@ -280,7 +280,7 @@ void AppSettings::DumpAppSettings(std::ostream &os)
 {
     std::cout << "\n++" << __PRETTY_FUNCTION__ << "" << std::endl;
 
-    AppSettings::USER_INFO_MAP::iterator iter;
+    AppSettings::DATA_MAP::iterator iter;
     os << this->m_app_settings_next_primary_key_val << " : [ " << this->GetNextPrimaryKeyValue() << " ]" << std::endl;
     os << this->m_worksource_log_path_key  << " : [ " << this->m_worksource_log_path << " ]" << std::endl;
 

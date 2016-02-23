@@ -3280,10 +3280,12 @@
 	"AppSettings.h"
 	"std_tools.h"
 
-1456106767 c:\users\mark\documents\github\samples\jobsearchlog0\include\appsettings.h
+1456263876 c:\users\mark\documents\github\samples\jobsearchlog0\include\appsettings.h
 	<string>
 	<map>
 	<list>
+	<boost/assign.hpp>
+	<algorithm>
 
 1455838879 c:\users\mark\documents\github\samples\jobsearchlog0\include\std_tools.h
 	<string>
@@ -3317,4 +3319,704 @@
 	<exception>
 	<stdexcept>
 	<boost/filesystem.hpp>
+
+1453985960 c:\etc\boost\include\boost-1_60\boost\assign.hpp
+	<boost/assign/std.hpp>
+	<boost/assign/list_of.hpp>
+	<boost/assign/list_inserter.hpp>
+	<boost/assign/assignment_exception.hpp>
+
+1453985964 c:\etc\boost\include\boost-1_60\boost\assign\std.hpp
+	<boost/assign/std/vector.hpp>
+	<boost/assign/std/deque.hpp>
+	<boost/assign/std/list.hpp>
+	<boost/assign/std/slist.hpp>
+	<boost/assign/std/stack.hpp>
+	<boost/assign/std/queue.hpp>
+	<boost/assign/std/set.hpp>
+	<boost/assign/std/map.hpp>
+
+1453986006 c:\etc\boost\include\boost-1_60\boost\assign\std\vector.hpp
+	<boost/assign/list_inserter.hpp>
+	<boost/config.hpp>
+	<vector>
+
+1453985964 c:\etc\boost\include\boost-1_60\boost\assign\list_inserter.hpp
+	<boost/detail/workaround.hpp>
+	<boost/mpl/if.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/range/begin.hpp>
+	<boost/range/end.hpp>
+	<boost/config.hpp>
+	<cstddef>
+	<boost/preprocessor/repetition/enum_binary_params.hpp>
+	<boost/preprocessor/repetition/enum_params.hpp>
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/iteration/local.hpp>
+	<boost/preprocessor/arithmetic/inc.hpp>
+
+1453985987 c:\etc\boost\include\boost-1_60\boost\range\begin.hpp
+	<boost/range/config.hpp>
+	<boost/range/detail/begin.hpp>
+	<boost/range/iterator.hpp>
+
+1453986050 c:\etc\boost\include\boost-1_60\boost\range\detail\begin.hpp
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/range/iterator.hpp>
+	<boost/range/detail/common.hpp>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\iterator.hpp
+	<boost/range/config.hpp>
+	<boost/range/range_fwd.hpp>
+	<boost/range/mutable_iterator.hpp>
+	<boost/range/const_iterator.hpp>
+	<boost/type_traits/is_const.hpp>
+	<boost/type_traits/remove_const.hpp>
+	<boost/mpl/eval_if.hpp>
+
+1453986050 c:\etc\boost\include\boost-1_60\boost\range\detail\common.hpp
+	<boost/range/config.hpp>
+	<boost/range/detail/sfinae.hpp>
+	<boost/type_traits/is_void.hpp>
+	<boost/mpl/bool.hpp>
+	<boost/mpl/if.hpp>
+	<boost/mpl/int.hpp>
+	<boost/mpl/or.hpp>
+	<cstddef>
+
+1453986050 c:\etc\boost\include\boost-1_60\boost\range\detail\sfinae.hpp
+	<boost/range/config.hpp>
+	<boost/type_traits/is_array.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<utility>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\end.hpp
+	<boost/range/config.hpp>
+	<boost/range/detail/end.hpp>
+	<boost/range/detail/implementation_help.hpp>
+	<boost/range/iterator.hpp>
+	<boost/range/const_iterator.hpp>
+
+1453986050 c:\etc\boost\include\boost-1_60\boost\range\detail\end.hpp
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/range/detail/implementation_help.hpp>
+	<boost/range/iterator.hpp>
+	<boost/range/detail/common.hpp>
+
+1453986050 c:\etc\boost\include\boost-1_60\boost\range\detail\implementation_help.hpp
+	<boost/range/config.hpp>
+	<boost/range/detail/common.hpp>
+	<boost/type_traits/is_same.hpp>
+	<cstddef>
+	<string.h>
+	<wchar.h>
+
+1453986044 c:\etc\boost\include\boost-1_60\boost\preprocessor\repetition\enum_binary_params.hpp
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/punctuation/comma_if.hpp>
+	<boost/preprocessor/repetition/repeat.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+	<boost/preprocessor/tuple/rem.hpp>
+
+1453986043 c:\etc\boost\include\boost-1_60\boost\preprocessor\iteration\local.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/slot/slot.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+
+1453986005 c:\etc\boost\include\boost-1_60\boost\assign\std\deque.hpp
+	<boost/assign/list_inserter.hpp>
+	<boost/config.hpp>
+	<deque>
+
+1453986005 c:\etc\boost\include\boost-1_60\boost\assign\std\list.hpp
+	<boost/assign/list_inserter.hpp>
+	<boost/config.hpp>
+	<list>
+
+1453986005 c:\etc\boost\include\boost-1_60\boost\assign\std\slist.hpp
+	<boost/config.hpp>
+	<boost/assign/list_inserter.hpp>
+	<slist>
+
+1453986005 c:\etc\boost\include\boost-1_60\boost\assign\std\stack.hpp
+	<boost/assign/list_inserter.hpp>
+	<boost/config.hpp>
+	<stack>
+
+1453986005 c:\etc\boost\include\boost-1_60\boost\assign\std\queue.hpp
+	<boost/assign/list_inserter.hpp>
+	<boost/config.hpp>
+	<queue>
+
+1453986005 c:\etc\boost\include\boost-1_60\boost\assign\std\set.hpp
+	<boost/assign/list_inserter.hpp>
+	<boost/config.hpp>
+	<set>
+
+1453986005 c:\etc\boost\include\boost-1_60\boost\assign\std\map.hpp
+	<boost/assign/list_inserter.hpp>
+	<boost/config.hpp>
+	<map>
+
+1453985964 c:\etc\boost\include\boost-1_60\boost\assign\list_of.hpp
+	<boost/assign/assignment_exception.hpp>
+	<boost/range/iterator_range.hpp>
+	<boost/config.hpp>
+	<boost/tuple/tuple.hpp>
+	<boost/type_traits/remove_const.hpp>
+	<boost/type_traits/remove_reference.hpp>
+	<boost/type_traits/is_reference.hpp>
+	<boost/static_assert.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/decay.hpp>
+	<boost/type_traits/is_array.hpp>
+	<boost/mpl/if.hpp>
+	<deque>
+	<cstddef>
+	<utility>
+	<boost/preprocessor/repetition/enum_binary_params.hpp>
+	<boost/preprocessor/repetition/enum_params.hpp>
+	<boost/preprocessor/iteration/local.hpp>
+	<boost/array.hpp>
+
+1453985964 c:\etc\boost\include\boost-1_60\boost\assign\assignment_exception.hpp
+	<exception>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\iterator_range.hpp
+	"boost/range/iterator_range_core.hpp"
+	"boost/range/iterator_range_io.hpp"
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\iterator_range_core.hpp
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/assert.hpp>
+	<boost/iterator/iterator_traits.hpp>
+	<boost/iterator/iterator_facade.hpp>
+	<boost/mpl/if.hpp>
+	<boost/mpl/not.hpp>
+	<boost/mpl/or.hpp>
+	<boost/type_traits/is_abstract.hpp>
+	<boost/type_traits/is_array.hpp>
+	<boost/type_traits/is_base_and_derived.hpp>
+	<boost/type_traits/is_convertible.hpp>
+	<boost/type_traits/is_function.hpp>
+	<boost/type_traits/is_pointer.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/range/functions.hpp>
+	<boost/range/iterator.hpp>
+	<boost/range/difference_type.hpp>
+	<boost/range/has_range_iterator.hpp>
+	<boost/range/algorithm/equal.hpp>
+	<boost/range/detail/safe_bool.hpp>
+	<boost/utility/enable_if.hpp>
+	<iterator>
+	<algorithm>
+	<cstddef>
+
+1453985995 c:\etc\boost\include\boost-1_60\boost\type_traits\is_base_and_derived.hpp
+	<boost/type_traits/intrinsics.hpp>
+	<boost/type_traits/integral_constant.hpp>
+	<boost/type_traits/is_class.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/type_traits/is_convertible.hpp>
+	<boost/config.hpp>
+	<boost/static_assert.hpp>
+	<boost/type_traits/remove_cv.hpp>
+	<boost/type_traits/is_same.hpp>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\functions.hpp
+	<boost/range/begin.hpp>
+	<boost/range/end.hpp>
+	<boost/range/size.hpp>
+	<boost/range/distance.hpp>
+	<boost/range/empty.hpp>
+	<boost/range/rbegin.hpp>
+	<boost/range/rend.hpp>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\size.hpp
+	<boost/range/config.hpp>
+	<boost/range/begin.hpp>
+	<boost/range/end.hpp>
+	<boost/range/size_type.hpp>
+	<boost/range/detail/has_member_size.hpp>
+	<boost/assert.hpp>
+	<boost/cstdint.hpp>
+	<boost/utility.hpp>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\size_type.hpp
+	<boost/range/config.hpp>
+	<boost/range/difference_type.hpp>
+	<boost/range/concepts.hpp>
+	<boost/range/has_range_iterator.hpp>
+	<boost/utility/enable_if.hpp>
+	<boost/type_traits/make_unsigned.hpp>
+	<boost/type_traits/remove_const.hpp>
+	<cstddef>
+	<utility>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\difference_type.hpp
+	<boost/mpl/and.hpp>
+	<boost/range/config.hpp>
+	<boost/range/iterator.hpp>
+	<boost/range/has_range_iterator.hpp>
+	<boost/iterator/iterator_traits.hpp>
+	<boost/type_traits/remove_reference.hpp>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\has_range_iterator.hpp
+	<boost/mpl/bool.hpp>
+	<boost/mpl/eval_if.hpp>
+	<boost/mpl/has_xxx.hpp>
+	<boost/range/iterator.hpp>
+	<boost/type_traits/remove_reference.hpp>
+	<boost/utility/enable_if.hpp>
+
+1453985987 c:\etc\boost\include\boost-1_60\boost\range\concepts.hpp
+	<boost/concept_check.hpp>
+	<boost/iterator/iterator_concepts.hpp>
+	<boost/range/begin.hpp>
+	<boost/range/end.hpp>
+	<boost/range/iterator.hpp>
+	<boost/range/value_type.hpp>
+	<boost/range/detail/misc_concept.hpp>
+	<boost/type_traits/remove_reference.hpp>
+
+1453985960 c:\etc\boost\include\boost-1_60\boost\concept_check.hpp
+	<boost/concept/assert.hpp>
+	<iterator>
+	<boost/type_traits/conversion_traits.hpp>
+	<utility>
+	<boost/type_traits/is_same.hpp>
+	<boost/type_traits/is_void.hpp>
+	<boost/mpl/assert.hpp>
+	<boost/mpl/bool.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/concept/usage.hpp>
+	<boost/concept/detail/concept_def.hpp>
+	<boost/concept/detail/concept_undef.hpp>
+
+1453985965 c:\etc\boost\include\boost-1_60\boost\concept\assert.hpp
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/concept/detail/msvc.hpp>
+	<boost/concept/detail/borland.hpp>
+	<boost/concept/detail/general.hpp>
+
+1453986008 c:\etc\boost\include\boost-1_60\boost\concept\detail\msvc.hpp
+	<boost/preprocessor/cat.hpp>
+	<boost/concept/detail/backward_compatibility.hpp>
+	<boost/config.hpp>
+	<boost/concept/detail/has_constraints.hpp>
+	<boost/mpl/if.hpp>
+
+1453986007 c:\etc\boost\include\boost-1_60\boost\concept\detail\backward_compatibility.hpp
+
+1453986008 c:\etc\boost\include\boost-1_60\boost\concept\detail\has_constraints.hpp
+	<boost/mpl/bool.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/concept/detail/backward_compatibility.hpp>
+
+1453986008 c:\etc\boost\include\boost-1_60\boost\concept\detail\borland.hpp
+	<boost/preprocessor/cat.hpp>
+	<boost/concept/detail/backward_compatibility.hpp>
+
+1453986008 c:\etc\boost\include\boost-1_60\boost\concept\detail\general.hpp
+	<boost/config.hpp>
+	<boost/preprocessor/cat.hpp>
+	<boost/concept/detail/backward_compatibility.hpp>
+	<boost/concept/detail/has_constraints.hpp>
+	<boost/mpl/if.hpp>
+
+1453985994 c:\etc\boost\include\boost-1_60\boost\type_traits\conversion_traits.hpp
+	<boost/type_traits/is_convertible.hpp>
+
+1453985965 c:\etc\boost\include\boost-1_60\boost\concept\usage.hpp
+	<boost/concept/assert.hpp>
+	<boost/detail/workaround.hpp>
+	<boost/concept/detail/backward_compatibility.hpp>
+
+1453986008 c:\etc\boost\include\boost-1_60\boost\concept\detail\concept_def.hpp
+	<boost/preprocessor/seq/for_each_i.hpp>
+	<boost/preprocessor/seq/enum.hpp>
+	<boost/preprocessor/comma_if.hpp>
+	<boost/preprocessor/cat.hpp>
+
+1453986044 c:\etc\boost\include\boost-1_60\boost\preprocessor\seq\for_each_i.hpp
+	<boost/preprocessor/arithmetic/dec.hpp>
+	<boost/preprocessor/arithmetic/inc.hpp>
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/control/if.hpp>
+	<boost/preprocessor/control/iif.hpp>
+	<boost/preprocessor/repetition/for.hpp>
+	<boost/preprocessor/seq/seq.hpp>
+	<boost/preprocessor/seq/size.hpp>
+	<boost/preprocessor/seq/detail/is_empty.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+	<boost/preprocessor/tuple/rem.hpp>
+
+1453986044 c:\etc\boost\include\boost-1_60\boost\preprocessor\seq\enum.hpp
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/seq/size.hpp>
+
+1453986008 c:\etc\boost\include\boost-1_60\boost\concept\detail\concept_undef.hpp
+
+1453985976 c:\etc\boost\include\boost-1_60\boost\iterator\iterator_concepts.hpp
+	<boost/concept_check.hpp>
+	<boost/iterator/iterator_categories.hpp>
+	<boost/detail/iterator.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/type_traits/is_integral.hpp>
+	<boost/mpl/bool.hpp>
+	<boost/mpl/if.hpp>
+	<boost/mpl/and.hpp>
+	<boost/mpl/or.hpp>
+	<boost/static_assert.hpp>
+	<boost/limits.hpp>
+	<boost/config.hpp>
+	<algorithm>
+	<boost/concept/detail/concept_def.hpp>
+	<boost/concept/detail/concept_undef.hpp>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\value_type.hpp
+	<boost/range/config.hpp>
+	<boost/range/iterator.hpp>
+	<boost/iterator/iterator_traits.hpp>
+
+1453986050 c:\etc\boost\include\boost-1_60\boost\range\detail\misc_concept.hpp
+	<boost/concept_check.hpp>
+
+1453985996 c:\etc\boost\include\boost-1_60\boost\type_traits\make_unsigned.hpp
+	<boost/type_traits/conditional.hpp>
+	<boost/type_traits/is_integral.hpp>
+	<boost/type_traits/is_signed.hpp>
+	<boost/type_traits/is_unsigned.hpp>
+	<boost/type_traits/is_enum.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/type_traits/remove_cv.hpp>
+	<boost/type_traits/is_const.hpp>
+	<boost/type_traits/is_volatile.hpp>
+	<boost/type_traits/add_const.hpp>
+	<boost/type_traits/add_volatile.hpp>
+	<boost/static_assert.hpp>
+
+1453985995 c:\etc\boost\include\boost-1_60\boost\type_traits\is_signed.hpp
+	<boost/type_traits/is_integral.hpp>
+	<boost/type_traits/remove_cv.hpp>
+	<boost/type_traits/is_enum.hpp>
+	<climits>
+
+1453985995 c:\etc\boost\include\boost-1_60\boost\type_traits\is_unsigned.hpp
+	<boost/type_traits/is_integral.hpp>
+	<boost/type_traits/is_enum.hpp>
+	<boost/type_traits/remove_cv.hpp>
+	<climits>
+
+1453985994 c:\etc\boost\include\boost-1_60\boost\type_traits\add_volatile.hpp
+	<boost/config.hpp>
+
+1453986050 c:\etc\boost\include\boost-1_60\boost\range\detail\has_member_size.hpp
+	<boost/type_traits/is_class.hpp>
+	<boost/type_traits/is_member_function_pointer.hpp>
+	<boost/mpl/and.hpp>
+	<boost/mpl/bool.hpp>
+	<boost/cstdint.hpp>
+
+1453985962 c:\etc\boost\include\boost-1_60\boost\utility.hpp
+	<boost/utility/addressof.hpp>
+	<boost/utility/base_from_member.hpp>
+	<boost/utility/binary.hpp>
+	<boost/utility/enable_if.hpp>
+	<boost/utility/identity_type.hpp>
+	<boost/checked_delete.hpp>
+	<boost/next_prior.hpp>
+	<boost/noncopyable.hpp>
+
+1453985997 c:\etc\boost\include\boost-1_60\boost\utility\base_from_member.hpp
+	<boost/config.hpp>
+	<boost/preprocessor/arithmetic/inc.hpp>
+	<boost/preprocessor/repetition/enum_binary_params.hpp>
+	<boost/preprocessor/repetition/enum_params.hpp>
+	<boost/preprocessor/repetition/repeat_from_to.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/type_traits/remove_cv.hpp>
+	<boost/type_traits/remove_reference.hpp>
+	<boost/utility/enable_if.hpp>
+
+1453986044 c:\etc\boost\include\boost-1_60\boost\preprocessor\repetition\repeat_from_to.hpp
+	<boost/preprocessor/arithmetic/add.hpp>
+	<boost/preprocessor/arithmetic/sub.hpp>
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/control/while.hpp>
+	<boost/preprocessor/debug/error.hpp>
+	<boost/preprocessor/detail/auto_rec.hpp>
+	<boost/preprocessor/repetition/repeat.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+	<boost/preprocessor/tuple/rem.hpp>
+
+1453985997 c:\etc\boost\include\boost-1_60\boost\utility\binary.hpp
+	<boost/preprocessor/control/deduce_d.hpp>
+	<boost/preprocessor/facilities/identity.hpp>
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/seq/cat.hpp>
+	<boost/preprocessor/seq/transform.hpp>
+	<boost/preprocessor/arithmetic/mod.hpp>
+	<boost/preprocessor/seq/size.hpp>
+	<boost/preprocessor/facilities/empty.hpp>
+	<boost/preprocessor/control/while.hpp>
+
+1453986043 c:\etc\boost\include\boost-1_60\boost\preprocessor\control\deduce_d.hpp
+	<boost/preprocessor/control/while.hpp>
+	<boost/preprocessor/detail/auto_rec.hpp>
+
+1453986044 c:\etc\boost\include\boost-1_60\boost\preprocessor\seq\cat.hpp
+	<boost/preprocessor/arithmetic/dec.hpp>
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/control/if.hpp>
+	<boost/preprocessor/seq/fold_left.hpp>
+	<boost/preprocessor/seq/seq.hpp>
+	<boost/preprocessor/seq/size.hpp>
+	<boost/preprocessor/tuple/eat.hpp>
+
+1453986044 c:\etc\boost\include\boost-1_60\boost\preprocessor\seq\transform.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/seq/fold_left.hpp>
+	<boost/preprocessor/seq/seq.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+	<boost/preprocessor/tuple/rem.hpp>
+
+1453986042 c:\etc\boost\include\boost-1_60\boost\preprocessor\arithmetic\mod.hpp
+	<boost/preprocessor/arithmetic/detail/div_base.hpp>
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+
+1453986092 c:\etc\boost\include\boost-1_60\boost\preprocessor\arithmetic\detail\div_base.hpp
+	<boost/preprocessor/arithmetic/inc.hpp>
+	<boost/preprocessor/arithmetic/sub.hpp>
+	<boost/preprocessor/comparison/less_equal.hpp>
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/control/while.hpp>
+	<boost/preprocessor/tuple/elem.hpp>
+	<boost/preprocessor/tuple/rem.hpp>
+
+1453986042 c:\etc\boost\include\boost-1_60\boost\preprocessor\comparison\less_equal.hpp
+	<boost/preprocessor/arithmetic/sub.hpp>
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/logical/not.hpp>
+
+1453986043 c:\etc\boost\include\boost-1_60\boost\preprocessor\logical\not.hpp
+	<boost/preprocessor/config/config.hpp>
+	<boost/preprocessor/logical/bool.hpp>
+	<boost/preprocessor/logical/compl.hpp>
+
+1453985997 c:\etc\boost\include\boost-1_60\boost\utility\identity_type.hpp
+	<boost/type_traits/function_traits.hpp>
+
+1453985994 c:\etc\boost\include\boost-1_60\boost\type_traits\function_traits.hpp
+	<boost/config.hpp>
+	<boost/type_traits/is_function.hpp>
+	<boost/type_traits/add_pointer.hpp>
+
+1453985961 c:\etc\boost\include\boost-1_60\boost\next_prior.hpp
+	<iterator>
+	<boost/mpl/and.hpp>
+	<boost/type_traits/is_integral.hpp>
+	<boost/type_traits/is_unsigned.hpp>
+	<boost/type_traits/integral_promotion.hpp>
+	<boost/type_traits/make_signed.hpp>
+	<boost/type_traits/has_plus.hpp>
+	<boost/type_traits/has_plus_assign.hpp>
+	<boost/type_traits/has_minus.hpp>
+	<boost/type_traits/has_minus_assign.hpp>
+
+1453985995 c:\etc\boost\include\boost-1_60\boost\type_traits\integral_promotion.hpp
+	<boost/config.hpp>
+	<boost/type_traits/integral_constant.hpp>
+	<boost/type_traits/is_const.hpp>
+	<boost/type_traits/is_enum.hpp>
+	<boost/type_traits/is_volatile.hpp>
+	<boost/type_traits/remove_cv.hpp>
+
+1453985996 c:\etc\boost\include\boost-1_60\boost\type_traits\make_signed.hpp
+	<boost/type_traits/conditional.hpp>
+	<boost/type_traits/is_integral.hpp>
+	<boost/type_traits/is_signed.hpp>
+	<boost/type_traits/is_unsigned.hpp>
+	<boost/type_traits/is_enum.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/type_traits/remove_cv.hpp>
+	<boost/type_traits/is_const.hpp>
+	<boost/type_traits/is_volatile.hpp>
+	<boost/type_traits/add_const.hpp>
+	<boost/type_traits/add_volatile.hpp>
+	<boost/static_assert.hpp>
+
+1453985995 c:\etc\boost\include\boost-1_60\boost\type_traits\has_plus.hpp
+	<boost/type_traits/detail/has_binary_operator.hpp>
+
+1453986063 c:\etc\boost\include\boost-1_60\boost\type_traits\detail\has_binary_operator.hpp
+	<boost/config.hpp>
+	<boost/type_traits/detail/yes_no_type.hpp>
+	<boost/type_traits/integral_constant.hpp>
+	<boost/type_traits/is_base_of.hpp>
+	<boost/type_traits/is_const.hpp>
+	<boost/type_traits/is_convertible.hpp>
+	<boost/type_traits/is_fundamental.hpp>
+	<boost/type_traits/is_integral.hpp>
+	<boost/type_traits/is_pointer.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/type_traits/is_void.hpp>
+	<boost/type_traits/remove_cv.hpp>
+	<boost/type_traits/remove_pointer.hpp>
+	<boost/type_traits/remove_reference.hpp>
+
+1453985995 c:\etc\boost\include\boost-1_60\boost\type_traits\is_base_of.hpp
+	<boost/type_traits/is_base_and_derived.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/type_traits/is_class.hpp>
+
+1453985995 c:\etc\boost\include\boost-1_60\boost\type_traits\is_fundamental.hpp
+	<boost/type_traits/is_arithmetic.hpp>
+	<boost/type_traits/is_void.hpp>
+
+1453985995 c:\etc\boost\include\boost-1_60\boost\type_traits\has_plus_assign.hpp
+	<boost/type_traits/detail/has_binary_operator.hpp>
+
+1453985994 c:\etc\boost\include\boost-1_60\boost\type_traits\has_minus.hpp
+	<boost/type_traits/detail/has_binary_operator.hpp>
+
+1453985994 c:\etc\boost\include\boost-1_60\boost\type_traits\has_minus_assign.hpp
+	<boost/type_traits/detail/has_binary_operator.hpp>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\distance.hpp
+	<boost/range/begin.hpp>
+	<boost/range/end.hpp>
+	<boost/range/difference_type.hpp>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\empty.hpp
+	<boost/range/config.hpp>
+	<boost/range/begin.hpp>
+	<boost/range/end.hpp>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\rbegin.hpp
+	<boost/range/end.hpp>
+	<boost/range/reverse_iterator.hpp>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\reverse_iterator.hpp
+	<boost/range/config.hpp>
+	<boost/range/iterator.hpp>
+	<boost/type_traits/remove_reference.hpp>
+	<boost/iterator/reverse_iterator.hpp>
+
+1453985976 c:\etc\boost\include\boost-1_60\boost\iterator\reverse_iterator.hpp
+	<boost/next_prior.hpp>
+	<boost/iterator.hpp>
+	<boost/iterator/iterator_adaptor.hpp>
+
+1453985976 c:\etc\boost\include\boost-1_60\boost\iterator\iterator_adaptor.hpp
+	<boost/static_assert.hpp>
+	<boost/iterator.hpp>
+	<boost/detail/iterator.hpp>
+	<boost/iterator/iterator_categories.hpp>
+	<boost/iterator/iterator_facade.hpp>
+	<boost/iterator/detail/enable_if.hpp>
+	<boost/mpl/and.hpp>
+	<boost/mpl/not.hpp>
+	<boost/mpl/or.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/type_traits/is_convertible.hpp>
+	<boost/type_traits/remove_reference.hpp>
+	<boost/type_traits/add_reference.hpp>
+	<boost/iterator/detail/config_def.hpp>
+	<boost/iterator/iterator_traits.hpp>
+	<boost/iterator/detail/config_undef.hpp>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\rend.hpp
+	<boost/range/begin.hpp>
+	<boost/range/reverse_iterator.hpp>
+
+1453986049 c:\etc\boost\include\boost-1_60\boost\range\algorithm\equal.hpp
+	<boost/config.hpp>
+	<boost/range/concepts.hpp>
+	<iterator>
+
+1453986050 c:\etc\boost\include\boost-1_60\boost\range\detail\safe_bool.hpp
+	<boost/config.hpp>
+	<boost/range/config.hpp>
+
+1453985988 c:\etc\boost\include\boost-1_60\boost\range\iterator_range_io.hpp
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+	<ostream>
+	<ostream.h>
+	<boost/range/iterator_range_core.hpp>
+	<iterator>
+	<algorithm>
+	<cstddef>
+
+1453985992 c:\etc\boost\include\boost-1_60\boost\tuple\tuple.hpp
+	"boost/config.hpp"
+	"boost/static_assert.hpp"
+	"boost/ref.hpp"
+	"boost/tuple/detail/tuple_basic.hpp"
+
+1453985961 c:\etc\boost\include\boost-1_60\boost\ref.hpp
+	<boost/core/ref.hpp>
+
+1453985966 c:\etc\boost\include\boost-1_60\boost\core\ref.hpp
+	<boost/config.hpp>
+	<boost/utility/addressof.hpp>
+	<boost/detail/workaround.hpp>
+
+1453986062 c:\etc\boost\include\boost-1_60\boost\tuple\detail\tuple_basic.hpp
+	<utility>
+	"boost/type_traits/cv_traits.hpp"
+	"boost/type_traits/function_traits.hpp"
+	"boost/utility/swap.hpp"
+	"boost/detail/workaround.hpp"
+
+1453985994 c:\etc\boost\include\boost-1_60\boost\type_traits\cv_traits.hpp
+	<boost/type_traits/add_const.hpp>
+	<boost/type_traits/add_volatile.hpp>
+	<boost/type_traits/add_cv.hpp>
+	<boost/type_traits/is_const.hpp>
+	<boost/type_traits/is_volatile.hpp>
+	<boost/type_traits/remove_const.hpp>
+	<boost/type_traits/remove_volatile.hpp>
+	<boost/type_traits/remove_cv.hpp>
+
+1453985994 c:\etc\boost\include\boost-1_60\boost\type_traits\add_cv.hpp
+	<boost/config.hpp>
+
+1453985996 c:\etc\boost\include\boost-1_60\boost\type_traits\remove_volatile.hpp
+	<boost/config.hpp>
+	<boost/detail/workaround.hpp>
+	<cstddef>
+
+1453985997 c:\etc\boost\include\boost-1_60\boost\utility\swap.hpp
+	<boost/core/swap.hpp>
+
+1453985966 c:\etc\boost\include\boost-1_60\boost\core\swap.hpp
+	<utility>
+	<algorithm>
+	<cstddef>
+	<boost/config.hpp>
+
+1453985960 c:\etc\boost\include\boost-1_60\boost\array.hpp
+	<boost/detail/workaround.hpp>
+	<cstddef>
+	<stdexcept>
+	<boost/assert.hpp>
+	<boost/swap.hpp>
+	<boost/detail/iterator.hpp>
+	<boost/throw_exception.hpp>
+	<boost/functional/hash_fwd.hpp>
+	<algorithm>
+	<boost/config.hpp>
+
+1453985962 c:\etc\boost\include\boost-1_60\boost\swap.hpp
+	<boost/core/swap.hpp>
 
