@@ -19,6 +19,33 @@ void PromptAndFillAppSettingsValuesFormConsole(AppSettings& settings)
     std::cout << "++" << __PRETTY_FUNCTION__ << " TODO: NOT YET IMPLEMENTED " << std::endl;
 }
 
+void GetValuesFromUser(AppSettings& data, std::string & category_key, std::string & key)
+{
+    std::string value;
+    std::cout << "++" << __PRETTY_FUNCTION__ << " KEY [" << key << "]" << std::endl;
+
+    std::cout << "\n Enter " << key << ": ";
+    std::getline(std::cin, value);
+    std::cout << "(" << key << " : " << value << ")" << std::endl;
+    data.SetValueInCategory(category_key, key, value);
+}
+
+void PromptForApplicationSettings(AppSettings& settings)
+{
+    std::vector<std::string> ck = settings.get_category_keys();
+    std::cout << "category keys length [" << ck.size() << "]" << std::endl;
+
+    for (auto category_key : settings.get_category_keys()) {
+        std::cout << "category key [" << category_key << "]" << std::endl;
+        std::vector<std::string>& vkeys = settings.get_keys_for_category(category_key);
+        std::cout << "keys for category [" << category_key << "] len [" << vkeys.size() << "]" << std::endl;
+        for (auto key : vkeys) {
+            std::cout << "key [" << key << "]" << std::endl;
+            GetValuesFromUser(settings, category_key, key);
+        }
+    }
+
+}
 
 void Verify_Data_Ok(AppSettings& settings)
 {
@@ -28,12 +55,14 @@ void Verify_Data_Ok(AppSettings& settings)
     std::string in_str;
     getline (cin, in_str);
     std::cout << "you entered " << in_str << std::endl;
-    //transform(in_str.begin(), in_str.end(), in_str.begin(), toupper);
+
     st::makelower(in_str.begin(), in_str.end());
 
     // allow/force user to enter alues again
     if ("y" != in_str) {
-        settings.PromptForUserData();
+        std::cout << "++" << __PRETTY_FUNCTION__ << " TODO: NOT YET IMPLEMENTED " << std::endl;
+        //settings.PromptForUserData();
+        PromptAndFillAppSettingsValuesFormConsole(settings);
     }
 }
 
@@ -48,7 +77,7 @@ int main(int argc, char* argv[])
     // AppSettings::PathFromExePath(settings, argv[0]);
 
     if (!settings.Load()) {
-        settings.PromptForUserData();
+        PromptForApplicationSettings(settings);
 
     }
     Verify_Data_Ok(settings);

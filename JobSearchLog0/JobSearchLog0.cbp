@@ -57,7 +57,7 @@
 		<Unit filename="include/AppSettings.h" />
 		<Unit filename="include/ContactOrJobSearchActivity.h" />
 		<Unit filename="include/EmployerContact.h" />
-		<Unit filename="include/FileLocation.h" />
+		<Unit filename="include/FileUtility.h" />
 		<Unit filename="include/JobSearchLog.h" />
 		<Unit filename="include/WorksourceActivity.h" />
 		<Unit filename="include/exampleWithCopyConstructor.h" />
@@ -66,7 +66,7 @@
 		<Unit filename="src/AppSettings.cpp" />
 		<Unit filename="src/ContactOrJobSearchActivity.cpp" />
 		<Unit filename="src/EmployerContact.cpp" />
-		<Unit filename="src/FileLocation.cpp" />
+		<Unit filename="src/FileUtility.cpp" />
 		<Unit filename="src/JobSearchLog.cpp" />
 		<Unit filename="src/WorksourceActivity.cpp" />
 		<Unit filename="src/exampleWithCopyConstructor.cpp" />

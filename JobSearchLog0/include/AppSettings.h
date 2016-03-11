@@ -9,11 +9,6 @@
 
 namespace basn = boost::assign;
 
-/*!
- * MAP data name (key) to the data value
- */
-
-
 /** \brief contain steady state settings for the application
  */
 class AppSettings
@@ -25,8 +20,6 @@ public:
         typedef std::map<std::string, std::vector<std::string> > MAP_KEY_WORD_VECTOR;
         static const char* DEFAULT_EXT;
         static const char* DEFAULT_NAME;
-
-        static const char * m_user_info_keys[];
 
         static const char* m_app_settings_next_primary_key_val;
         static const char* m_worksource_log_path_key;
@@ -40,14 +33,15 @@ public:
         unsigned int GetCounter() { return m_Counter; }
         void SetCounter(unsigned int val) { m_Counter = val; }
 
-        unsigned int GetNextPrimaryKeyValue() { return m_NextPrimaryKeyValue; }
-        void SetNextPrimaryKeyValue(unsigned int val) { m_NextPrimaryKeyValue = val; }
+        std::string& GetNextPrimaryKeyValue() { return m_map_data_primary_key["Next-Primary-Key"]; }
+        void SetNextPrimaryKeyValue(const char* val) { m_map_data_primary_key["Next-Primary-Key"] = val; }
+        DATA_MAP& get_map_primary_key() { return m_map_data_primary_key; }
 
-        DATA_MAP& Getuser_info_map() { return m_map_user_info; }
-        void Setuser_info_map(DATA_MAP& val) { m_map_user_info = val; }
+        DATA_MAP& get_user_info_map() { return m_map_user_info; }
+        void set_user_info_map(DATA_MAP& val) { m_map_user_info = val; }
 
-        DATA_MAP& Getapp_settings_map() { return m_app_settings_map; }
-        void Setapp_settings_map(DATA_MAP& val) { m_app_settings_map = val; }
+        DATA_MAP& get_app_settings_map() { return m_app_settings_map; }
+        void set_app_settings_map(DATA_MAP& val) { m_app_settings_map = val; }
 
         std::string& GetSettingsPath() { return m_settings_path; }
         void SetSettingsPath(const char* path) { m_settings_path = path; }
@@ -59,20 +53,20 @@ public:
         void SetSettingsFileName(const char* val) { m_settings_file_name = val; }
         void BuildFullFilePath(const char* in_path, const char* suffix=AppSettings::DEFAULT_NAME, const char* ext=AppSettings::DEFAULT_EXT);
 
-        std::string& get_worksource_log_path() { return m_worksource_log_path; }
-        void set_worksource_log_path(const char* val) { m_worksource_log_path = val; }
+        std::string& get_worksource_log_path() { return m_map_data_storage_path["Data-Storage-Path"]; }
+        void set_worksource_log_path(const char* val) { m_map_data_storage_path["Data-Storage-Path"] = val; }
+        DATA_MAP& get_map_data_storage_path() { return m_map_data_storage_path; }
+
+        KEY_WORD_VECTOR& get_category_keys() { return m_category_keys; }
+        void set_category_keys(KEY_WORD_VECTOR val) { std::copy(val.begin(), val.end(), m_category_keys.begin()); }
 
         std::string GetSettingsFilePath() { return PathToSettingsFile(); }
-
-        //static void PathFromExePath(AppSettings& context, const char* path);
 
         bool Load();
         void Save();
         void Dump(std::ostream &os);
         void DumpUserData(std::ostream &os);
         void DumpAppSettings(std::ostream &os);
-
-        void PromptForUserData();
 
         std::vector<std::string>& get_keys_for_category(std::string& key) {
             return m_map_category_keys[key];
@@ -82,6 +76,7 @@ public:
             std::cout << "set category value [" << category_key << "][" << key << "] = " << val << std::endl;
             this->m_map_category_data[category_key][key] = val;
         }
+        void set_data_storage_path_value(const char* key, const char* val);
     protected:
         std::string& PathToSettingsFile();
 
@@ -89,7 +84,7 @@ public:
 
         void InitializeKeysPersonalInfo() {
             std::cout << "++" << __PRETTY_FUNCTION__ << std::endl;
-            basn::push_back(m_personal_info_keys)("First-Name")("Last-Name")("Address")("City")("State")("ZIP")("SSN")("Home-Phone");
+            basn::push_back(m_personal_info_keys)("First-Name")("Last-Name")("Address")("City")("State")("ZIP")("SSN")("Home-Phone")("Mobile-Phone");
         }
         void InitializeKeysDataStoragePathKeys() {
             std::cout << "++" << __PRETTY_FUNCTION__ << std::endl;
