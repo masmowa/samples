@@ -33,10 +33,10 @@
 	"tinyxml2.h"
 	<string>
 
-1457667624 c:\users\mark\documents\github\samples\jobsearchlog\include\userinfo.h
+1457718012 c:\users\mark\documents\github\samples\jobsearchlog\include\userinfo.h
 	<basic_STORAGE.h>
 
-1457666438 c:\users\mark\documents\github\samples\jobsearchlog\include\basic_storage.h
+1457737836 c:\users\mark\documents\github\samples\jobsearchlog\include\basic_storage.h
 	<iostream>
 	<string>
 	<tinyxml2.h>
@@ -2649,7 +2649,7 @@
 	<cstddef>
 	<boost/detail/workaround.hpp>
 
-1457667699 c:\users\mark\documents\github\samples\jobsearchlog\include\appsettings.h
+1457737636 c:\users\mark\documents\github\samples\jobsearchlog\include\appsettings.h
 	<basic_STORAGE.h>
 	<string>
 	<map>
@@ -2657,6 +2657,8 @@
 	<boost/assign.hpp>
 	<algorithm>
 	"UserInfo.h"
+	"PrimaryKey.h"
+	"StorageDataPath.h"
 
 1457660301 c:\users\mark\documents\github\samples\jobsearchlog\include\fileutility.h
 	<string>
@@ -5491,12 +5493,14 @@
 	<boost/config/abi_prefix.hpp>
 	<boost/config/abi_suffix.hpp>
 
-1457667873 source:c:\users\mark\documents\github\samples\jobsearchlog\src\appsettings.cpp
+1457737278 source:c:\users\mark\documents\github\samples\jobsearchlog\src\appsettings.cpp
 	<iostream>
 	"tinyxml2.h"
 	"AppSettings.h"
 	"dbg_Utility.h"
 	"UserInfo.h"
+	"PrimaryKey.h"
+	"StorageDataPath.h"
 
 1457657141 source:c:\users\mark\documents\github\samples\jobsearchlog\src\dbg_utility.cpp
 	"dbg_Utility.h"
@@ -5515,5 +5519,15 @@
 
 1457667899 source:c:\users\mark\documents\github\samples\jobsearchlog\src\userinfo.cpp
 	"UserInfo.h"
+	"dbg_Utility.h"
+
+1457736797 c:\users\mark\documents\github\samples\jobsearchlog\include\primarykey.h
+	<basic_STORAGE.h>
+
+1457736986 c:\users\mark\documents\github\samples\jobsearchlog\include\storagedatapath.h
+	<basic_STORAGE.h>
+
+1457738399 source:c:\users\mark\documents\github\samples\jobsearchlog\src\primarykey.cpp
+	"PrimaryKey.h"
 	"dbg_Utility.h"
 

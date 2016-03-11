@@ -25,9 +25,10 @@ public:
     virtual ~basic_STORAGE() {
         std::cout << "++" << __PRETTY_FUNCTION__ << std::endl;
     }
-    DATA_MAP Getdata() { return m_data; }
-    KEY_VECTOR Getkeys() { return m_keys; }
-    std::string Getname() { return m_name; }
+
+    DATA_MAP& Getdata()    { return m_data; }
+    KEY_VECTOR& Getkeys()  { return m_keys; }
+    std::string& Getname() { return m_name; }
 
     virtual void Setname(std::string& val) { m_name = val; }
     virtual std::string& get_value(const std::string& key) = 0;

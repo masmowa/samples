@@ -3,6 +3,8 @@
 #include "AppSettings.h"
 #include "dbg_Utility.h"
 #include "UserInfo.h"
+#include "PrimaryKey.h"
+#include "StorageDataPath.h"
 
 const char* AppSettings::DEFAULT_NAME="Settings";
 const char* AppSettings::DEFAULT_EXT="xml";
@@ -76,11 +78,15 @@ tinyxml2::XMLError AppSettings::SaveDefault(const char* filepath)
 
 	dbg_Utility::print_xml_element("befor user data", root);
 
-	UserInfo user_info;
-
-	user_info.ToXML(&doc, root);
+	m_user_info.ToXML(&doc, root);
 
     dbg_Utility::print_xml_element("after user data", root);
+
+    this->m_primary_key.ToXML(&doc, root);
+    dbg_Utility::print_xml_element("after Primary key", root);
+
+    this->m_storage_data_path.ToXML(&doc, root);
+    dbg_Utility::print_xml_element("after Storage Data Path", root);
 
     xmlResult = doc.SaveFile(this->m_filepath.c_str());
 

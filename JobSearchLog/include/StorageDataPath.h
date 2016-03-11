@@ -1,19 +1,16 @@
-#ifndef USERINFO_H
-#define USERINFO_H
+#ifndef STORAGEDATAPATH_H
+#define STORAGEDATAPATH_H
 
 #include <basic_STORAGE.h>
 
 
-class UserInfo : public basic_STORAGE
+class StorageDataPath : public basic_STORAGE
 {
 public:
     static const char* xml_section_name;
-public:
-    UserInfo();
-    virtual ~UserInfo();
-
-    unsigned int GetCounter() { return m_Counter; }
-    void SetCounter(unsigned int val) { m_Counter = val; }
+    public:
+        StorageDataPath();
+        virtual ~StorageDataPath();
 
     std::string Getname() { return m_name; }
     void Setname(std::string val) { m_name = val; }
@@ -25,7 +22,7 @@ public:
     virtual void Init() { InitKeys(); }
     virtual void InitKeys() {
         std::cout << "++" << __PRETTY_FUNCTION__ << std::endl;
-        boost::assign::push_back(m_keys)(this->m_name)("First-Name")("Last-Name")("Address")("City")("State")("ZIP")("SSN")("Home-Phone")("Mobile-Phone");
+        boost::assign::push_back(m_keys)(this->m_name)("Storage-Path");
     }
     virtual bool Load(const char* filepath=nullptr) { return false; };
     virtual bool Save(const char* filepath=nullptr) { return false; };
@@ -34,15 +31,10 @@ public:
 
     protected:
         void TestDataInit() {
-            this->set_value("name", "john Doe");
-            this->set_value("address", "123 Main");
-            this->set_value("city", "Monroe");
-            this->set_value("state", "WA");
-            this->set_value("ZIP", "98272");
+            this->set_value("Storage-Path", "C:/Users/Mark/Documents/Job.Search/Logs/Data");
         }
 
     private:
-        unsigned int m_Counter;
 };
 
-#endif // USERINFO_H
+#endif // STORAGEDATAPATH_H
