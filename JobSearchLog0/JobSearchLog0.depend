@@ -3267,7 +3267,7 @@
 1455702993 source:c:\users\mark\documents\github\samples\jobsearchlog0\src\worksourceactivity.cpp
 	"WorksourceActivity.h"
 
-1456106952 source:c:\users\mark\documents\github\samples\jobsearchlog0\main.cpp
+1456341826 source:c:\users\mark\documents\github\samples\jobsearchlog0\main.cpp
 	<iostream>
 	<string>
 	<algorithm>
@@ -3280,7 +3280,7 @@
 	"AppSettings.h"
 	"std_tools.h"
 
-1456263876 c:\users\mark\documents\github\samples\jobsearchlog0\include\appsettings.h
+1456345902 c:\users\mark\documents\github\samples\jobsearchlog0\include\appsettings.h
 	<string>
 	<map>
 	<list>
@@ -3291,7 +3291,7 @@
 	<string>
 	<locale>
 
-1456107399 source:c:\users\mark\documents\github\samples\jobsearchlog0\src\appsettings.cpp
+1456346940 source:c:\users\mark\documents\github\samples\jobsearchlog0\src\appsettings.cpp
 	<iostream>
 	<string>
 	<sstream>
@@ -3302,7 +3302,7 @@
 	<ctime>
 	"AppSettings.h"
 	"tinyxml2.h"
-	"FileLocation.h"
+	"FileUtility.h"
 	<boost/filesystem.hpp>
 
 1456101034 c:\users\mark\documents\github\samples\jobsearchlog0\include\filelocation.h
@@ -4019,4 +4019,19 @@
 
 1453985962 c:\etc\boost\include\boost-1_60\boost\swap.hpp
 	<boost/core/swap.hpp>
+
+1456173587 source:c:\users\mark\documents\github\samples\jobsearchlog0\src\fileutility.cpp
+	"FileUtility.h"
+	<string>
+	<sstream>
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<ctime>
+	<exception>
+	<stdexcept>
+	<boost/filesystem.hpp>
+
+1456173578 c:\users\mark\documents\github\samples\jobsearchlog0\include\fileutility.h
+	<string>
 
