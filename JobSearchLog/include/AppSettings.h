@@ -19,8 +19,6 @@ public:
     static const char* DEFAULT_EXT;
     static const char* DEFAULT_NAME;
 
-    static const char* m_app_settings_next_primary_key_val;
-    static const char* m_worksource_log_path_key;
     static const char* xml_section_name;
 
     public:

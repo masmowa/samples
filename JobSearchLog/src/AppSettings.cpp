@@ -10,8 +10,6 @@ const char* AppSettings::DEFAULT_NAME="Settings";
 const char* AppSettings::DEFAULT_EXT="xml";
 
 const char* AppSettings::xml_section_name                    = "Application-Settings";
-const char* AppSettings::m_app_settings_next_primary_key_val = "NextPrimaryKeyValue";
-const char* AppSettings::m_worksource_log_path_key           = "WorksourceLogPath";
 
 
 AppSettings::AppSettings(const char* filepath)
