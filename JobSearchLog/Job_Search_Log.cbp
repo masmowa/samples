@@ -22,6 +22,7 @@
 					<Add library="boost_system-mgw49-mt-d-1_60" />
 					<Add library="boost_filesystem-mgw49-mt-d-1_60" />
 					<Add library="boost_thread-mgw49-mt-d-1_60" />
+					<Add library="boost_date_time-mgw49-mt-d-1_60" />
 					<Add directory="$(#boost)/lib" />
 				</Linker>
 			</Target>
@@ -40,6 +41,7 @@
 					<Add library="boost_filesystem-mgw49-mt-1_60" />
 					<Add library="boost_system-mgw49-mt-1_60" />
 					<Add library="boost_thread-mgw49-mt-1_60" />
+					<Add library="boost_date_time-mgw49-mt-1_60" />
 				</Linker>
 			</Target>
 		</Build>
@@ -57,12 +59,18 @@
 		</Linker>
 		<Unit filename="include/AppSettings.h" />
 		<Unit filename="include/FileUtility.h" />
+		<Unit filename="include/JobSearchLogForWeekEnding.h" />
+		<Unit filename="include/PrimaryKey.h" />
+		<Unit filename="include/StorageDataPath.h" />
 		<Unit filename="include/UserInfo.h" />
 		<Unit filename="include/basic_STORAGE.h" />
 		<Unit filename="include/dbg_Utility.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/AppSettings.cpp" />
 		<Unit filename="src/FileUtility.cpp" />
+		<Unit filename="src/JobSearchLogForWeekEnding.cpp" />
+		<Unit filename="src/PrimaryKey.cpp" />
+		<Unit filename="src/StorageDataPath.cpp" />
 		<Unit filename="src/UserInfo.cpp" />
 		<Unit filename="src/dbg_Utility.cpp" />
 		<Extensions>
