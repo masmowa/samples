@@ -1,0 +1,6 @@
+C:\Users\Mark\Documents\GitHub\samples\QualysProgrammingTest\QualysProgrammingTest\bin\Debug\QualysProgrammingTest.exe.config
+C:\Users\Mark\Documents\GitHub\samples\QualysProgrammingTest\QualysProgrammingTest\obj\Debug\QualysProgrammingTest.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Documents\GitHub\samples\QualysProgrammingTest\QualysProgrammingTest\bin\Debug\QualysProgrammingTest.exe
+C:\Users\Mark\Documents\GitHub\samples\QualysProgrammingTest\QualysProgrammingTest\bin\Debug\QualysProgrammingTest.pdb
+C:\Users\Mark\Documents\GitHub\samples\QualysProgrammingTest\QualysProgrammingTest\obj\Debug\QualysProgrammingTest.exe
+C:\Users\Mark\Documents\GitHub\samples\QualysProgrammingTest\QualysProgrammingTest\obj\Debug\QualysProgrammingTest.pdb
