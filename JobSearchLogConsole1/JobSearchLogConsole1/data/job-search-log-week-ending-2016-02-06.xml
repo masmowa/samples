@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<weekly-job-search-log>
+    <week-ending>02/06/2016</week-ending>
+    <activity>
+        <date>2016-02-05</date>
+        <type>WORKSOURCE_ACTIVITY</type>
+        <employer-contact>false</employer-contact>
+        <worksource-activity>true</worksource-activity>
+        <activity-details>
+            <employer>
+                <type></type>
+                <application-or-resume>false</application-or-resume>
+                <interview>false</interview>
+                <inquiry>false</inquiry>
+                <position></position>
+                <contact-mechanism>
+                    <type>IN_PERSON</type>
+                    <online-or-email>false</online-or-email>
+                    <fax>false</fax>
+                    <in-person>true</in-person>
+                    <mail>false</mail>
+                    <kiosk>false</kiosk>
+                    <telephone>false</telephone>
+                    <other>false</other>
+                    <other-description></other-description>
+                </contact-mechanism>
+            </employer>
+            <worksource>
+                <description>REA - ReEmployment Assist</description>
+            </worksource>
+        </activity-details>
+        <contact-info>
+            <name>Worksource Monroe, WA</name>
+            <telephone>360-799-3421</telephone>
+            <fax></fax>
+            <address>17150 W. Main St., suite B</address>
+            <city>Monroe</city>
+            <state>WA</state>
+            <zip>98272</zip>
+            <web-site></web-site>
+            
+            <contact-person>
+                <name>Anita Byrne</name>
+                <position></position>
+                <email></email>
+                <phone></phone>
+            </contact-person>
+                
+        
+        </contact-info>
+        <contact-indirect>
+            <fax></fax>
+            <email></email>
+            <job-reference-number></job-reference-number>
+            <newspaper>
+                <name></name>
+                <date></date>
+            </newspaper>
+        </contact-indirect>
+    </activity>
+    <activity>
+        <date>2016-02-01</date>
+        <type>EMPLOYER_CONTACT</type>
+        <employer-contact>true</employer-contact>
+        <worksource-activity>false</worksource-activity>
+        <activity-details>
+            <employer>
+                <type>RESUME</type>
+                <application-or-resume>true</application-or-resume>
+                <interview>false</interview>
+                <inquiry>false</inquiry>
+                <position>Software Design Engineer</position>
+                <contact-mechanism>
+                    <type>ONLINE</type>
+                    <online-or-email>true</online-or-email>
+                    <fax>false</fax>
+                    <in-person>false</in-person>
+                    <mail>false</mail>
+                    <kiosk>false</kiosk>
+                    <telephone>false</telephone>
+                    <other>false</other>
+                    <other-description></other-description>
+                </contact-mechanism>
+            </employer>
+            <worksource>
+                <description></description>
+            </worksource>
+        </activity-details>
+        <contact-info>
+            <name>Vertafor</name>
+            <telephone></telephone>
+            <fax></fax>
+            <address></address>
+            <city>Bothell</city>
+            <state>WA</state>
+            <zip></zip>
+            <web-site>http://www.vertafore.com/About-Us/Careers</web-site>
+            
+            <contact-person>
+                <name></name>
+                <position></position>
+                <email></email>
+                <phone></phone>
+            </contact-person>
+                
+        
+        </contact-info>
+        <contact-indirect>
+            <fax></fax>
+            <email></email>
+            <job-reference-number></job-reference-number>
+            <newspaper>
+                <name></name>
+                <date></date>
+            </newspaper>
+        </contact-indirect>
+    </activity>
+    <activity>
+        <date>2016-02-02</date>
+        <type>EMPLOYER_CONTACT</type>
+        <employer-contact>true</employer-contact>
+        <worksource-activity>false</worksource-activity>
+        <activity-details>
+            <employer>
+                <type>ONLINE</type>
+                <application-or-resume>true</application-or-resume>
+                <interview>false</interview>
+                <inquiry>false</inquiry>
+                <position>Software Engineer</position>
+                <contact-mechanism>
+                    <type>ONLINE</type>
+                    <online-or-email>true</online-or-email>
+                    <fax>false</fax>
+                    <in-person>true</in-person>
+                    <mail>false</mail>
+                    <kiosk>false</kiosk>
+                    <telephone>false</telephone>
+                    <other>false</other>
+                    <other-description></other-description>
+                </contact-mechanism>
+            </employer>
+            <worksource>
+                <description></description>
+            </worksource>
+        </activity-details>
+        <contact-info>
+            <name>Protingent</name>
+            <telephone></telephone>
+            <fax></fax>
+            <address></address>
+            <city>Redmond</city>
+            <state>WA</state>
+            <zip>98272</zip>
+            <web-site></web-site>
+            
+            <contact-person>
+                <name>Drew McMillan</name>
+                <position></position>
+                <email>dmcmillan@protingent.com</email>
+                <phone></phone>
+            </contact-person>
+                
+        
+        </contact-info>
+        <contact-indirect>
+            <fax></fax>
+            <email></email>
+            <job-reference-number></job-reference-number>
+            <newspaper>
+                <name></name>
+                <date></date>
+            </newspaper>
+        </contact-indirect>
+    </activity>
+    <activity>
+        <date>2016-02-05</date>
+        <type>WORKSOURCE_ACTIVITY</type>
+        <employer-contact>false</employer-contact>
+        <worksource-activity>true</worksource-activity>
+        <activity-details>
+            <employer>
+                <type></type>
+                <application-or-resume>false</application-or-resume>
+                <interview>false</interview>
+                <inquiry>false</inquiry>
+                <position></position>
+                <contact-mechanism>
+                    <type>IN_PERSON</type>
+                    <online-or-email>false</online-or-email>
+                    <fax>false</fax>
+                    <in-person>true</in-person>
+                    <mail>false</mail>
+                    <kiosk>false</kiosk>
+                    <telephone>false</telephone>
+                    <other>false</other>
+                    <other-description></other-description>
+                </contact-mechanism>
+            </employer>
+            <worksource>
+                <description>REA - ReEmployment Assist</description>
+            </worksource>
+        </activity-details>
+        <contact-info>
+            <name>Worksource Monroe, WA</name>
+            <telephone>360-799-3421</telephone>
+            <fax></fax>
+            <address>17150 W. Main St., suite B</address>
+            <city>Monroe</city>
+            <state>WA</state>
+            <zip>98272</zip>
+            <web-site></web-site>
+            
+            <contact-person>
+                <name>Anita Byrne</name>
+                <email></email>
+                
+            </contact-person>
+                
+            <position></position>
+        
+        </contact-info>
+        <contact-indirect>
+            <fax></fax>
+            <email></email>
+            <job-reference-number></job-reference-number>
+            <newspaper>
+                <name></name>
+                <date></date>
+            </newspaper>
+        </contact-indirect>
+    </activity>
+    <activity>
+        <date>2016-02-05</date>
+        <type>WORKSOURCE_ACTIVITY</type>
+        <employer-contact>false</employer-contact>
+        <worksource-activity>true</worksource-activity>
+        <activity-details>
+            <employer>
+                <type></type>
+                <application-or-resume>false</application-or-resume>
+                <interview>false</interview>
+                <inquiry>false</inquiry>
+                <position></position>
+                <contact-mechanism>
+                    <type>IN_PERSON</type>
+                    <online-or-email>false</online-or-email>
+                    <fax>false</fax>
+                    <in-person>true</in-person>
+                    <mail>false</mail>
+                    <kiosk>false</kiosk>
+                    <telephone>false</telephone>
+                    <other>false</other>
+                    <other-description></other-description>
+                </contact-mechanism>
+            </employer>
+            <worksource>
+                <description>REA - ReEmployment Assist</description>
+            </worksource>
+        </activity-details>
+        <contact-info>
+            <name>Worksource Monroe, WA</name>
+            <telephone>360-799-3421</telephone>
+            <fax></fax>
+            <address>17150 W. Main St., suite B</address>
+            <city>Monroe</city>
+            <state>WA</state>
+            <zip>98272</zip>
+            <web-site></web-site>
+            
+            <contact-person>
+                <name>Anita Byrne</name>
+                <email></email>
+                
+            </contact-person>
+                
+            <position></position>
+        
+        </contact-info>
+        <contact-indirect>
+            <fax></fax>
+            <email></email>
+            <job-reference-number></job-reference-number>
+            <newspaper>
+                <name></name>
+                <date></date>
+            </newspaper>
+        </contact-indirect>
+    </activity>
+</weekly-job-search-log>
+

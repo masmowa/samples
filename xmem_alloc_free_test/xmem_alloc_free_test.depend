@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1458789816 source:c:\users\mark\documents\github\samples\xmem_alloc_free_test\main.c
+	<stdio.h>
+	<stdlib.h>
+	"xmemory.h"
+
+1458784895 c:\users\mark\documents\github\samples\xmem_alloc_free_test\xmemory.h
+	"stddef.h"
+
+1458789548 source:c:\users\mark\documents\github\samples\xmem_alloc_free_test\xmemory.c
+	"xmemory.h"
+

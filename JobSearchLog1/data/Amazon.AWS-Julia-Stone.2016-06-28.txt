@@ -1,0 +1,145 @@
+Amazon.AWS-Julia-Stone.2016-06-28.txt
+operations team
+automating tools.
+network monitoring team
+traffic of devices 
+automating thing.
+infrastructure team
+
+hackerbrain
+coding test 
+should arrive by thursday
+should work durring quiet time
+Load balance
+
+phone: 608.669.4181.
+Then why don’t you call me at 3:15? That will give me time if my meeting runs long.
+
+ 
+
+608.669.4181.
+
+Thanks,
+
+
+Julia
+
+ 
+
+From: Mark Simonton [mailto:masmowa@hotmail.com] 
+Sent: Tuesday, June 28, 2016 2:23 PM
+To: Stone, Julia <stojulia@amazon.com>
+Subject: RE: AWS Infrastructure opportunity
+
+ 
+
+either time will be great.  I am available for either.
+
+Mark Simonton
+masmowa@hotmail.com
+home:   360-805-9327
+mobile: 425-446-0010
+
+
+From: stojulia@amazon.com
+To: masmowa@hotmail.com
+Subject: RE: AWS Infrastructure opportunity
+Date: Tue, 28 Jun 2016 18:27:27 +0000
+
+Hi Mark,
+
+
+I have time later today between 3 and 4 PDT, or Thursday morning at 9 or 10. Which works best? You can call me on my cell at 608.669.4181.
+
+
+Thanks,
+
+
+Julia
+
+ 
+
+From: Mark Simonton [mailto:masmowa@hotmail.com] 
+Sent: Friday, June 24, 2016 3:44 PM
+To: Stone, Julia <stojulia@amazon.com>
+Subject: RE: AWS Infrastructure opportunity
+
+ 
+
+Thank you for contacting me I am interested in talking about this position in more detail.  Please contact me at any time after 9am any day next week.
+the Home phone is the best, but I now have wi-fi calling so the cell phone works at my house now too.
+
+Mark Simonton
+masmowa@hotmail.com
+home:   360-805-9327
+mobile: 425-446-0010
+
+From: stojulia@amazon.com
+To: masmowa@hotmail.com
+Subject: AWS Infrastructure opportunity
+Date: Thu, 23 Jun 2016 19:27:54 +0000
+
+Hi Mark,
+
+ 
+
+I am a technical recruiter at AWS working on finding the best talent to help automate, secure and maintain the most massively distributed system in the world. Our teams are looking for talent to help fulfill these lofty goals, and your background looks like a potential match.
+
+
+The job description below is an overview of this type of role. If you feel this could be a mutual fit, I’d like to schedule 30 minutes in the coming days to discuss. Please let me know a convenient time or two and I’ll be happy to work with your schedule.
+
+ 
+
+Thanks in advance for your time. I look forward to hearing from you.
+
+ 
+
+Julia Stone
+
+Sr. Technical Recruiter
+
+Amazon Web Services – Infrastructure | Seattle, WA 98121
+
+e: stojulia@amazon.com | m: 608.669.4181
+
+ 
+
+Work hard. Have fun. Make history.
+
+ 
+
+Amazon is looking for Software Development Engineers to build the software that monitors one of the world’s largest and most complex networks. Tens of millions of customers rely on Amazon’s network for using our retail websites, accessing content on their Kindles and building applications and businesses on top of Amazon Web Services (AWS). Our goal is to become The Infrastructure Platform for the world – achieving this goal requires high-leverage, massively scalable software systems. Our success depends on our world-class network infrastructure, and our network depends on our Network Monitoring teams. The Traffic & Device team builds critical software that touches our network devices to safely re-route traffic around, either to remediate problems or for maintenance purposes.
+
+You are interested in being part of a high-bar team with global responsibility for the Network Monitoring software used across all of Amazon’s businesses.
+Solving problems at scale excites you.
+You don’t implement specs from analysts and architects – you talk to your customers and design solutions to their problems. You automate and innovate.
+You do not push just one technology agenda – you choose the best tool for the problem at hand.
+You believe that the craft of software engineering is about writing code right the first time. For you, code reviews and automated testing are not chores – they’re a core part of writing great software.
+You don’t throw your code over the wall. You launch it, own it, support it and make it incrementally better for the benefit of your customers.
+You enjoy working in a flexible, fast-paced, collaborative team environment.
+You are interested in making changes to network devices like routers, switches, firewalls and the internet traffic itself using software
+Basic Qualifications:
+
+Computer Science degree, or equivalent experience.
+Ability to gather customer requirements and deliver innovative solutions.
+Strong track record of launching projects of significant complexity.
+Ability to mentor other software developers to maintain architectural vision and software quality.
+Experience with software engineering best practices (code reviews, source control management, build processes, testing, release and change management).
+Very strong problem solving and coding skills.
+Understanding of data structures, algorithms and their performance.
+Proficient at designing software systems, from high-availability large-scale distributed systems to your application’s object model.
+Understanding of the building blocks of computer systems
+Comfortable with Linux.
+Preferred:
+
+Experience of working in a DevOps team.
+Experience developing robust, highly scalable distributed systems.
+Experience working on IP networking technologies, routers, switches and the application of routing protocols. (OSPF, BGP)
+Familiarity with distributed systems, asynchronous messaging, and web and other network protocols (e.g., TCP/IP, UDP, IPSEC, HTTP, HTTPS)
+Experience developing tools and services for Network Devices
+
+Amazon is an Equal Opportunity-Affirmative Action Employer – Minority / Female / Disability / Veteran / Gender Identity / Sexual Orientation.
+
+ 
+
+© 2016 Microsoft Terms Privacy & cookies Developers English (United States)

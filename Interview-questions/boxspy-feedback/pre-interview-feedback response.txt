@@ -1,0 +1,24 @@
+My view of the pre-interview question events
+1) I mis-interpreted the time constraints for the test, it said the 
+   test should take 30 minutes, it also said the answer was due 
+   by 0100 GMT. 
+2) At first I wanted to do in-place move to eliminate using an extra 
+   array and copy, I could not see the solution.
+3) after I had a solution for the first test case I noticed that the 
+   test had timed out; at that point I assumed I had lost the 
+   opportunity, but I sent Bryan a note and eventually a copy of my 
+first solution.
+4) after feedback from Bryan, I assumed I was not a good candidate;
+5) as an exercise I re-worked the solution to work correctly with 3 
+   more test cases as described by Bryan.  I did this as a training 
+   exercise for myself, since I know similar issues will present 
+   themselves in future interviews and I need to be prepaired and 
+   I wanted to know the proper solution.
+6) I do the last step for all failed technical interviews to ensure I 
+   use the interview as a learning experience.
+
+as an asside I have noticed that my first 3 interviews when starting 
+a job search seem to be loss leader; that is I almost always fail
+to secure a position from the first interview, because I need the
+practice to understand how to present my answers and I need time
+to remember how to answer Computer Science 101 questions :-)

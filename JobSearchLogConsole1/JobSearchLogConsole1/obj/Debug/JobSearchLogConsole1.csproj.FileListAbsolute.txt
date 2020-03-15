@@ -1,0 +1,6 @@
+C:\Users\Mark\Documents\GitHub\samples\JobSearchLogConsole1\JobSearchLogConsole1\bin\Debug\JobSearchLogConsole1.exe.config
+C:\Users\Mark\Documents\GitHub\samples\JobSearchLogConsole1\JobSearchLogConsole1\bin\Debug\JobSearchLogConsole1.exe
+C:\Users\Mark\Documents\GitHub\samples\JobSearchLogConsole1\JobSearchLogConsole1\bin\Debug\JobSearchLogConsole1.pdb
+C:\Users\Mark\Documents\GitHub\samples\JobSearchLogConsole1\JobSearchLogConsole1\obj\Debug\JobSearchLogConsole1.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Documents\GitHub\samples\JobSearchLogConsole1\JobSearchLogConsole1\obj\Debug\JobSearchLogConsole1.exe
+C:\Users\Mark\Documents\GitHub\samples\JobSearchLogConsole1\JobSearchLogConsole1\obj\Debug\JobSearchLogConsole1.pdb

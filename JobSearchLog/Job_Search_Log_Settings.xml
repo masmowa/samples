@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application-Settings>
+    <!-- Settings for Application-Settings -->
+    <User-Data>
+        <!-- Elements of User-Data -->
+        <ZIP>98272</ZIP>
+        <address>123 Main</address>
+        <city>Monroe</city>
+        <name>john Doe</name>
+        <state>WA</state>
+        <!-- End of Element -->
+    </User-Data>
+    <Primary-Key>
+        <!-- Elements of Primary-Key -->
+        <Next-Key-Value>1234</Next-Key-Value>
+        <!-- End of Element -->
+    </Primary-Key>
+    <Data-Storage-Path>
+        <!-- Elements of Data-Storage-Path -->
+        <Storage-Path>C:/Users/Mark/Documents/Job.Search/Logs/Data</Storage-Path>
+        <!-- End of Element -->
+    </Data-Storage-Path>
+</Application-Settings>

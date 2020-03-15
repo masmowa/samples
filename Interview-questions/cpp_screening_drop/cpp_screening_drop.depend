@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1452027206 source:c:\users\mark\documents\proj\cpp_screening_drop\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<exception>
+	<stdexcept>
+
+1452178831 source:c:\users\mark\documents\proj\practice\interview-questions\cpp_screening_drop\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<exception>
+	<stdexcept>
+

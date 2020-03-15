@@ -1,0 +1,6 @@
+C:\Users\Mark\Documents\GitHub\samples\SortListOfIPStrings\SortListOfIPStrings\bin\Debug\SortListOfIPStrings.exe.config
+C:\Users\Mark\Documents\GitHub\samples\SortListOfIPStrings\SortListOfIPStrings\bin\Debug\SortListOfIPStrings.exe
+C:\Users\Mark\Documents\GitHub\samples\SortListOfIPStrings\SortListOfIPStrings\bin\Debug\SortListOfIPStrings.pdb
+C:\Users\Mark\Documents\GitHub\samples\SortListOfIPStrings\SortListOfIPStrings\obj\Debug\SortListOfIPStrings.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Documents\GitHub\samples\SortListOfIPStrings\SortListOfIPStrings\obj\Debug\SortListOfIPStrings.exe
+C:\Users\Mark\Documents\GitHub\samples\SortListOfIPStrings\SortListOfIPStrings\obj\Debug\SortListOfIPStrings.pdb

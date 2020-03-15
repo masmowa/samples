@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="weekly-job-search-log">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="week-ending" type="xs:string" minOccurs="0" />
+        <xs:element name="activity" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="date" type="xs:string" minOccurs="0" />
+              <xs:element name="type" type="xs:string" minOccurs="0" />
+              <xs:element name="employer-contact" type="xs:string" minOccurs="0" />
+              <xs:element name="worksource-activity" type="xs:string" minOccurs="0" />
+              <xs:element name="activity-details" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="employer" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="type" type="xs:string" minOccurs="0" />
+                          <xs:element name="application-or-resume" type="xs:string" minOccurs="0" />
+                          <xs:element name="interview" type="xs:string" minOccurs="0" />
+                          <xs:element name="inquiry" type="xs:string" minOccurs="0" />
+                          <xs:element name="position" type="xs:string" minOccurs="0" />
+                          <xs:element name="contact-mechanism" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="type" type="xs:string" minOccurs="0" />
+                                <xs:element name="online-or-email" type="xs:string" minOccurs="0" />
+                                <xs:element name="fax" type="xs:string" minOccurs="0" />
+                                <xs:element name="in-person" type="xs:string" minOccurs="0" />
+                                <xs:element name="mail" type="xs:string" minOccurs="0" />
+                                <xs:element name="kiosk" type="xs:string" minOccurs="0" />
+                                <xs:element name="telephone" type="xs:string" minOccurs="0" />
+                                <xs:element name="other" type="xs:string" minOccurs="0" />
+                                <xs:element name="other-description" type="xs:string" minOccurs="0" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="worksource" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="description" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="contact-info" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" minOccurs="0" />
+                    <xs:element name="telephone" type="xs:string" minOccurs="0" />
+                    <xs:element name="fax" type="xs:string" minOccurs="0" />
+                    <xs:element name="address" type="xs:string" minOccurs="0" />
+                    <xs:element name="city" type="xs:string" minOccurs="0" />
+                    <xs:element name="state" type="xs:string" minOccurs="0" />
+                    <xs:element name="zip" type="xs:string" minOccurs="0" />
+                    <xs:element name="web-site" type="xs:string" minOccurs="0" />
+                    <xs:element name="position" type="xs:string" minOccurs="0" />
+                    <xs:element name="contact-person" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="name" type="xs:string" minOccurs="0" />
+                          <xs:element name="position" type="xs:string" minOccurs="0" />
+                          <xs:element name="email" type="xs:string" minOccurs="0" />
+                          <xs:element name="phone" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="contact-indirect" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="fax" type="xs:string" minOccurs="0" />
+                    <xs:element name="email" type="xs:string" minOccurs="0" />
+                    <xs:element name="job-reference-number" type="xs:string" minOccurs="0" />
+                    <xs:element name="newspaper" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="name" type="xs:string" minOccurs="0" />
+                          <xs:element name="date" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="weekly-job-search-log" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
